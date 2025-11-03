@@ -1,0 +1,8 @@
+[
+  { "index_type": "self", "info": "BOOLEAN", "dstore": "CUSTOM", "compr": "CODE", "qproc": "TERMatat","optim": "Null" },
+  { "index_type": "self", "info": "BOOLEAN", "dstore": "CUSTOM", "compr": "CLIB", "qproc": "TERMatat","optim": "Null" },
+  { "index_type": "self", "info": "TFIDF", "dstore": "CUSTOM", "compr": "CODE", "qproc": "TERMatat","optim": "Null" },
+  { "index_type": "self", "info": "TFIDF", "dstore": "CUSTOM", "compr": "CLIB", "qproc": "TERMatat","optim": "Null" },
+  { "index_type": "self", "info": "WORDCOUNT", "dstore": "CUSTOM", "compr": "CODE", "qproc": "TERMatat","optim": "Null" },
+  { "index_type": "self", "info": "WORDCOUNT", "dstore": "CUSTOM", "compr": "CLIB", "qproc": "TERMatat","optim": "Null" }
+]

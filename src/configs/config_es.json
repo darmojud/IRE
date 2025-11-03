@@ -1,0 +1,3 @@
+[
+  { "index_type": "es", "info": "BOOLEAN", "dstore": "CUSTOM", "compr": "NONE", "qproc": "TERMatat","optim": "Null" }
+]

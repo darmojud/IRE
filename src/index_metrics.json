@@ -1,0 +1,122 @@
+[
+    {
+        "index_type": "es",
+        "info_type": "BOOLEAN",
+        "total_docs": 40000,
+        "batch_size": 5000,
+        "max_processes": 10,
+        "index_directory": "-",
+        "total_time_sec": 68.3,
+        "memory_used_mb": 6046.84,
+        "index_size_mb": 110.63,
+        "timestamp": "2025-11-02 20:57:34"
+    },
+    {
+        "index_type": "self",
+        "info_type": "BOOLEAN",
+        "total_docs": 40000,
+        "batch_size": 5000,
+        "max_processes": 10,
+        "index_directory": "indexes_custom/boolean/compress_none/optim_Null/wiki_index",
+        "total_time_sec": 178.05,
+        "memory_used_mb": 6514.86,
+        "index_size_mb": 1127.4,
+        "timestamp": "2025-11-02 21:02:48"
+    },
+    {
+        "index_type": "self",
+        "info_type": "TFIDF",
+        "total_docs": 40000,
+        "batch_size": 5000,
+        "max_processes": 10,
+        "index_directory": "indexes_custom/tfidf/compress_none/optim_Null/wiki_index",
+        "total_time_sec": 215.48,
+        "memory_used_mb": 5070.77,
+        "index_size_mb": 1973.42,
+        "timestamp": "2025-11-02 21:06:23"
+    },
+    {
+        "index_type": "self",
+        "info_type": "WORDCOUNT",
+        "total_docs": 40000,
+        "batch_size": 5000,
+        "max_processes": 10,
+        "index_directory": "indexes_custom/wordcount/compress_none/optim_Null/wiki_index",
+        "total_time_sec": 176.41,
+        "memory_used_mb": 5160.16,
+        "index_size_mb": 1127.41,
+        "timestamp": "2025-11-02 21:09:20"
+    },
+        {
+        "index_type": "self",
+        "info_type": "BOOLEAN",
+        "total_docs": 40000,
+        "batch_size": 5000,
+        "max_processes": 10,
+        "index_directory": "indexes_custom/boolean/compress_code/optim_Null/wiki_index",
+        "total_time_sec": 172.17,
+        "memory_used_mb": 6985.27,
+        "index_size_mb": 632.13,
+        "timestamp": "2025-11-02 22:06:41"
+    },
+    {
+        "index_type": "self",
+        "info_type": "BOOLEAN",
+        "total_docs": 40000,
+        "batch_size": 5000,
+        "max_processes": 10,
+        "index_directory": "indexes_custom/boolean/compress_clib/optim_Null/wiki_index",
+        "total_time_sec": 183.41,
+        "memory_used_mb": 4542.97,
+        "index_size_mb": 1026.52,
+        "timestamp": "2025-11-02 22:09:44"
+    },
+    {
+        "index_type": "self",
+        "info_type": "TFIDF",
+        "total_docs": 40000,
+        "batch_size": 5000,
+        "max_processes": 10,
+        "index_directory": "indexes_custom/tfidf/compress_code/optim_Null/wiki_index",
+        "total_time_sec": 215.16,
+        "memory_used_mb": 4881.33,
+        "index_size_mb": 1478.11,
+        "timestamp": "2025-11-02 22:13:20"
+    },
+    {
+        "index_type": "self",
+        "info_type": "TFIDF",
+        "total_docs": 40000,
+        "batch_size": 5000,
+        "max_processes": 10,
+        "index_directory": "indexes_custom/tfidf/compress_clib/optim_Null/wiki_index",
+        "total_time_sec": 224.98,
+        "memory_used_mb": 4004.56,
+        "index_size_mb": 1872.53,
+        "timestamp": "2025-11-02 22:17:05"
+    },
+    {
+        "index_type": "self",
+        "info_type": "WORDCOUNT",
+        "total_docs": 40000,
+        "batch_size": 5000,
+        "max_processes": 10,
+        "index_directory": "indexes_custom/wordcount/compress_code/optim_Null/wiki_index",
+        "total_time_sec": 174.12,
+        "memory_used_mb": 4797.0,
+        "index_size_mb": 632.12,
+        "timestamp": "2025-11-02 22:19:59"
+    },
+    {
+        "index_type": "self",
+        "info_type": "WORDCOUNT",
+        "total_docs": 40000,
+        "batch_size": 5000,
+        "max_processes": 10,
+        "index_directory": "indexes_custom/wordcount/compress_clib/optim_Null/wiki_index",
+        "total_time_sec": 184.46,
+        "memory_used_mb": 4985.94,
+        "index_size_mb": 1026.53,
+        "timestamp": "2025-11-02 22:23:03"
+    }
+]

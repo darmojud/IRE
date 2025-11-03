@@ -1,0 +1,5 @@
+[
+  { "index_type": "self", "info": "BOOLEAN", "dstore": "CUSTOM", "compr": "NONE", "qproc": "TERMatat","optim": "Null" },
+  { "index_type": "self", "info": "TFIDF", "dstore": "CUSTOM", "compr": "NONE", "qproc": "TERMatat", "optim": "Null" },
+  { "index_type": "self", "info": "WORDCOUNT", "dstore": "CUSTOM", "compr": "NONE", "qproc": "TERMatat", "optim": "Null" }
+]

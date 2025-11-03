@@ -1,0 +1,919 @@
+timestamp,index_type,info,dstore,qproc,compr,optim,query,query_type,run_id,latency_ms,current_mem_kb,peak_mem_kb
+2025-11-02T15:29:05.714663,es, , , , , ,america,term,0,3.18
+2025-11-02T15:29:05.715303,es, , , , , ,america,term,1,2.12
+2025-11-02T15:29:05.715407,es, , , , , ,america,term,2,2.001
+2025-11-02T15:29:05.715493,es, , , , , ,america,term,3,2.211
+2025-11-02T15:29:05.715575,es, , , , , ,america,term,4,2.146
+2025-11-02T15:29:05.727577,es, , , , , ,washington,term,0,3.313
+2025-11-02T15:29:05.727813,es, , , , , ,washington,term,1,2.459
+2025-11-02T15:29:05.727973,es, , , , , ,washington,term,2,2.061
+2025-11-02T15:29:05.728116,es, , , , , ,washington,term,3,1.906
+2025-11-02T15:29:05.728211,es, , , , , ,washington,term,4,2.062
+2025-11-02T15:29:05.747130,es, , , , , ,constitution,term,0,4.119
+2025-11-02T15:29:05.747359,es, , , , , ,constitution,term,1,3.807
+2025-11-02T15:29:05.747446,es, , , , , ,constitution,term,2,3.784
+2025-11-02T15:29:05.747523,es, , , , , ,constitution,term,3,3.382
+2025-11-02T15:29:05.747596,es, , , , , ,constitution,term,4,3.58
+2025-11-02T15:29:05.765653,es, , , , , ,america AND washington,boolean,0,3.629
+2025-11-02T15:29:05.765871,es, , , , , ,america AND washington,boolean,1,3.662
+2025-11-02T15:29:05.765961,es, , , , , ,america AND washington,boolean,2,3.557
+2025-11-02T15:29:05.766042,es, , , , , ,america AND washington,boolean,3,3.75
+2025-11-02T15:29:05.766115,es, , , , , ,america AND washington,boolean,4,3.229
+2025-11-02T15:29:05.784022,es, , , , , ,america OR washington,boolean,0,3.584
+2025-11-02T15:29:05.784241,es, , , , , ,america OR washington,boolean,1,3.625
+2025-11-02T15:29:05.784327,es, , , , , ,america OR washington,boolean,2,3.408
+2025-11-02T15:29:05.784403,es, , , , , ,america OR washington,boolean,3,3.692
+2025-11-02T15:29:05.784478,es, , , , , ,america OR washington,boolean,4,3.36
+2025-11-02T15:29:05.795262,es, , , , , ,america AND NOT washington,boolean,0,2.371
+2025-11-02T15:29:05.795461,es, , , , , ,america AND NOT washington,boolean,1,2.258
+2025-11-02T15:29:05.795549,es, , , , , ,america AND NOT washington,boolean,2,1.989
+2025-11-02T15:29:05.795632,es, , , , , ,america AND NOT washington,boolean,3,1.964
+2025-11-02T15:29:05.795707,es, , , , , ,america AND NOT washington,boolean,4,1.99
+2025-11-02T15:29:05.806019,es, , , , , ,NOT america,boolean,0,2.095
+2025-11-02T15:29:05.806214,es, , , , , ,NOT america,boolean,1,1.962
+2025-11-02T15:29:05.806298,es, , , , , ,NOT america,boolean,2,1.942
+2025-11-02T15:29:05.806373,es, , , , , ,NOT america,boolean,3,2.091
+2025-11-02T15:29:05.806446,es, , , , , ,NOT america,boolean,4,2.036
+2025-11-02T15:29:05.814657,es, , , , , ,"""united states of america""",phrase,0,3.149
+2025-11-02T15:29:05.814849,es, , , , , ,"""united states of america""",phrase,1,1.171
+2025-11-02T15:29:05.814939,es, , , , , ,"""united states of america""",phrase,2,1.249
+2025-11-02T15:29:05.815020,es, , , , , ,"""united states of america""",phrase,3,1.296
+2025-11-02T15:29:05.815094,es, , , , , ,"""united states of america""",phrase,4,1.234
+2025-11-02T15:29:05.821172,es, , , , , ,"""american constitution""",phrase,0,1.225
+2025-11-02T15:29:05.821332,es, , , , , ,"""american constitution""",phrase,1,1.068
+2025-11-02T15:29:05.821415,es, , , , , ,"""american constitution""",phrase,2,1.053
+2025-11-02T15:29:05.821496,es, , , , , ,"""american constitution""",phrase,3,1.401
+2025-11-02T15:29:05.821570,es, , , , , ,"""american constitution""",phrase,4,1.232
+2025-11-02T15:29:05.827501,es, , , , , ,"""american independence""",phrase,0,1.679
+2025-11-02T15:29:05.827651,es, , , , , ,"""american independence""",phrase,1,0.985
+2025-11-02T15:29:05.827736,es, , , , , ,"""american independence""",phrase,2,1.008
+2025-11-02T15:29:05.827814,es, , , , , ,"""american independence""",phrase,3,1.127
+2025-11-02T15:29:05.827897,es, , , , , ,"""american independence""",phrase,4,1.037
+2025-11-02T15:29:05.833892,es, , , , , ,"""united states of america"" AND ""american constitution""",mixed,0,1.405
+2025-11-02T15:29:05.834063,es, , , , , ,"""united states of america"" AND ""american constitution""",mixed,1,1.142
+2025-11-02T15:29:05.834159,es, , , , , ,"""united states of america"" AND ""american constitution""",mixed,2,1.143
+2025-11-02T15:29:05.834245,es, , , , , ,"""united states of america"" AND ""american constitution""",mixed,3,1.038
+2025-11-02T15:29:05.834325,es, , , , , ,"""united states of america"" AND ""american constitution""",mixed,4,1.16
+2025-11-02T15:29:05.846671,es, , , , , ,"""american independence"" OR america",mixed,0,2.453
+2025-11-02T15:29:05.846912,es, , , , , ,"""american independence"" OR america",mixed,1,2.34
+2025-11-02T15:29:05.847007,es, , , , , ,"""american independence"" OR america",mixed,2,2.273
+2025-11-02T15:29:05.847093,es, , , , , ,"""american independence"" OR america",mixed,3,2.589
+2025-11-02T15:29:05.847172,es, , , , , ,"""american independence"" OR america",mixed,4,2.489
+2025-11-02T15:29:05.853605,es, , , , , ,"""united states of america"" AND NOT constitution",mixed,0,1.456
+2025-11-02T15:29:05.853806,es, , , , , ,"""united states of america"" AND NOT constitution",mixed,1,1.275
+2025-11-02T15:29:05.853898,es, , , , , ,"""united states of america"" AND NOT constitution",mixed,2,1.168
+2025-11-02T15:29:05.853978,es, , , , , ,"""united states of america"" AND NOT constitution",mixed,3,1.181
+2025-11-02T15:29:05.854055,es, , , , , ,"""united states of america"" AND NOT constitution",mixed,4,1.236
+2025-11-02T15:29:05.867738,es, , , , , ,"""north america"" OR ""south america""",mixed,0,5.188
+2025-11-02T15:29:05.867952,es, , , , , ,"""north america"" OR ""south america""",mixed,1,2.525
+2025-11-02T15:29:05.868035,es, , , , , ,"""north america"" OR ""south america""",mixed,2,2.112
+2025-11-02T15:29:05.868110,es, , , , , ,"""north america"" OR ""south america""",mixed,3,1.88
+2025-11-02T15:29:05.868183,es, , , , , ,"""north america"" OR ""south america""",mixed,4,1.869
+2025-11-02T15:29:05.886857,es, , , , , ,"(""america"" AND ""washington"") OR (""congress"" AND ""president"")",grouped,0,4.675
+2025-11-02T15:29:05.887062,es, , , , , ,"(""america"" AND ""washington"") OR (""congress"" AND ""president"")",grouped,1,3.456
+2025-11-02T15:29:05.887144,es, , , , , ,"(""america"" AND ""washington"") OR (""congress"" AND ""president"")",grouped,2,3.493
+2025-11-02T15:29:05.887219,es, , , , , ,"(""america"" AND ""washington"") OR (""congress"" AND ""president"")",grouped,3,3.386
+2025-11-02T15:29:05.887290,es, , , , , ,"(""america"" AND ""washington"") OR (""congress"" AND ""president"")",grouped,4,3.401
+2025-11-02T15:29:05.913029,es, , , , , ,"(""america"" OR ""washington"") AND (""congress"" OR ""president"")",grouped,0,5.229
+2025-11-02T15:29:05.913233,es, , , , , ,"(""america"" OR ""washington"") AND (""congress"" OR ""president"")",grouped,1,5.393
+2025-11-02T15:29:05.913324,es, , , , , ,"(""america"" OR ""washington"") AND (""congress"" OR ""president"")",grouped,2,4.861
+2025-11-02T15:29:05.913407,es, , , , , ,"(""america"" OR ""washington"") AND (""congress"" OR ""president"")",grouped,3,4.968
+2025-11-02T15:29:05.913482,es, , , , , ,"(""america"" OR ""washington"") AND (""congress"" OR ""president"")",grouped,4,4.985
+2025-11-02T15:29:05.927351,es, , , , , ,"(""america"" AND NOT ""washington"") OR (""washington"" AND NOT ""america"")",grouped,0,2.994
+2025-11-02T15:29:05.927546,es, , , , , ,"(""america"" AND NOT ""washington"") OR (""washington"" AND NOT ""america"")",grouped,1,2.682
+2025-11-02T15:29:05.927640,es, , , , , ,"(""america"" AND NOT ""washington"") OR (""washington"" AND NOT ""america"")",grouped,2,2.59
+2025-11-02T15:29:05.927724,es, , , , , ,"(""america"" AND NOT ""washington"") OR (""washington"" AND NOT ""america"")",grouped,3,2.659
+2025-11-02T15:29:05.927803,es, , , , , ,"(""america"" AND NOT ""washington"") OR (""washington"" AND NOT ""america"")",grouped,4,2.753
+2025-11-02T15:29:05.942402,es, , , , , ,"(america OR washington) AND NOT ""congress""",grouped,0,2.877
+2025-11-02T15:29:05.942641,es, , , , , ,"(america OR washington) AND NOT ""congress""",grouped,1,3.186
+2025-11-02T15:29:05.942733,es, , , , , ,"(america OR washington) AND NOT ""congress""",grouped,2,3.245
+2025-11-02T15:29:05.942811,es, , , , , ,"(america OR washington) AND NOT ""congress""",grouped,3,2.669
+2025-11-02T15:29:05.942886,es, , , , , ,"(america OR washington) AND NOT ""congress""",grouped,4,2.427
+2025-11-02T15:29:05.955272,es, , , , , ,"((""america"" AND ""washington"") OR ""president"") AND NOT ""congress""",nested,0,2.422
+2025-11-02T15:29:05.955505,es, , , , , ,"((""america"" AND ""washington"") OR ""president"") AND NOT ""congress""",nested,1,2.619
+2025-11-02T15:29:05.955595,es, , , , , ,"((""america"" AND ""washington"") OR ""president"") AND NOT ""congress""",nested,2,2.337
+2025-11-02T15:29:05.955671,es, , , , , ,"((""america"" AND ""washington"") OR ""president"") AND NOT ""congress""",nested,3,2.193
+2025-11-02T15:29:05.955765,es, , , , , ,"((""america"" AND ""washington"") OR ""president"") AND NOT ""congress""",nested,4,2.585
+2025-11-02T15:29:05.980884,es, , , , , ,"((""america"" OR ""washington"") AND (""congress"" OR ""president""))",nested,0,4.9
+2025-11-02T15:29:05.981092,es, , , , , ,"((""america"" OR ""washington"") AND (""congress"" OR ""president""))",nested,1,5.244
+2025-11-02T15:29:05.981178,es, , , , , ,"((""america"" OR ""washington"") AND (""congress"" OR ""president""))",nested,2,5.003
+2025-11-02T15:29:05.981256,es, , , , , ,"((""america"" OR ""washington"") AND (""congress"" OR ""president""))",nested,3,4.796
+2025-11-02T15:29:05.981330,es, , , , , ,"((""america"" OR ""washington"") AND (""congress"" OR ""president""))",nested,4,4.878
+2025-11-02T15:29:06.000172,es, , , , , ,"(""america"" AND (""washington"" OR ""president""))",nested,0,3.547
+2025-11-02T15:29:06.000371,es, , , , , ,"(""america"" AND (""washington"" OR ""president""))",nested,1,3.475
+2025-11-02T15:29:06.000454,es, , , , , ,"(""america"" AND (""washington"" OR ""president""))",nested,2,3.502
+2025-11-02T15:29:06.000529,es, , , , , ,"(""america"" AND (""washington"" OR ""president""))",nested,3,4.622
+2025-11-02T15:29:06.000602,es, , , , , ,"(""america"" AND (""washington"" OR ""president""))",nested,4,3.461
+2025-11-02T15:29:06.026128,es, , , , , ,"(""america"" AND (""washington"" AND (""congress"" OR ""president"")))",nested,0,4.83
+2025-11-02T15:29:06.026347,es, , , , , ,"(""america"" AND (""washington"" AND (""congress"" OR ""president"")))",nested,1,5.009
+2025-11-02T15:29:06.026445,es, , , , , ,"(""america"" AND (""washington"" AND (""congress"" OR ""president"")))",nested,2,5.216
+2025-11-02T15:29:06.026518,es, , , , , ,"(""america"" AND (""washington"" AND (""congress"" OR ""president"")))",nested,3,5.031
+2025-11-02T15:29:06.026591,es, , , , , ,"(""america"" AND (""washington"" AND (""congress"" OR ""president"")))",nested,4,5.124
+2025-11-02T15:29:06.044427,es, , , , , ,america washington,edge,0,3.632
+2025-11-02T15:29:06.044626,es, , , , , ,america washington,edge,1,3.399
+2025-11-02T15:29:06.044713,es, , , , , ,america washington,edge,2,3.472
+2025-11-02T15:29:06.044793,es, , , , , ,america washington,edge,3,3.449
+2025-11-02T15:29:06.044870,es, , , , , ,america washington,edge,4,3.645
+2025-11-02T15:29:06.056991,es, , , , , ,"""united states of america"" OR america",edge,0,2.4
+2025-11-02T15:29:06.057185,es, , , , , ,"""united states of america"" OR america",edge,1,2.25
+2025-11-02T15:29:06.057267,es, , , , , ,"""united states of america"" OR america",edge,2,2.161
+2025-11-02T15:29:06.057341,es, , , , , ,"""united states of america"" OR america",edge,3,2.495
+2025-11-02T15:29:06.057412,es, , , , , ,"""united states of america"" OR america",edge,4,2.622
+2025-11-02T15:29:06.062237,es, , , , , ,"""washington"" AND NOT ""washington""",edge,0,1.108
+2025-11-02T15:29:06.062426,es, , , , , ,"""washington"" AND NOT ""washington""",edge,1,0.898
+2025-11-02T15:29:06.062514,es, , , , , ,"""washington"" AND NOT ""washington""",edge,2,0.899
+2025-11-02T15:29:06.062593,es, , , , , ,"""washington"" AND NOT ""washington""",edge,3,0.807
+2025-11-02T15:29:06.062668,es, , , , , ,"""washington"" AND NOT ""washington""",edge,4,1.015
+2025-11-02T15:29:06.072775,es, , , , , ,(america),edge,0,2.034
+2025-11-02T15:29:06.072958,es, , , , , ,(america),edge,1,1.967
+2025-11-02T15:29:06.073043,es, , , , , ,(america),edge,2,2.015
+2025-11-02T15:29:06.073119,es, , , , , ,(america),edge,3,1.992
+2025-11-02T15:29:06.073193,es, , , , , ,(america),edge,4,1.906
+2025-11-02T15:29:06.089363,es, , , , , ,"NOT (""america"" AND ""washington"")",edge,0,2.189
+2025-11-02T15:29:06.089579,es, , , , , ,"NOT (""america"" AND ""washington"")",edge,1,2.447
+2025-11-02T15:29:06.089665,es, , , , , ,"NOT (""america"" AND ""washington"")",edge,2,2.298
+2025-11-02T15:29:06.089743,es, , , , , ,"NOT (""america"" AND ""washington"")",edge,3,6.642
+2025-11-02T15:29:06.089832,es, , , , , ,"NOT (""america"" AND ""washington"")",edge,4,2.394
+2025-11-02T15:54:02.590924,self,BOOLEAN,DB1,NONE,TERMatat,Null,america,term,0,221.827
+2025-11-02T15:54:02.801744,self,BOOLEAN,DB1,NONE,TERMatat,Null,washington,term,0,210.368
+2025-11-02T15:54:02.903353,self,BOOLEAN,DB1,NONE,TERMatat,Null,constitution,term,0,101.149
+2025-11-02T15:54:03.175993,self,BOOLEAN,DB1,NONE,TERMatat,Null,america AND washington,boolean,0,272.209
+2025-11-02T15:54:03.449228,self,BOOLEAN,DB1,NONE,TERMatat,Null,america OR washington,boolean,0,272.846
+2025-11-02T15:54:03.732958,self,BOOLEAN,DB1,NONE,TERMatat,Null,america AND NOT washington,boolean,0,283.337
+2025-11-02T15:54:03.975018,self,BOOLEAN,DB1,NONE,TERMatat,Null,NOT america,boolean,0,241.665
+2025-11-02T15:54:04.000642,self,BOOLEAN,DB1,NONE,TERMatat,Null,"""united states of america""",phrase,0,25.332
+2025-11-02T15:54:04.036762,self,BOOLEAN,DB1,NONE,TERMatat,Null,"""american constitution""",phrase,0,35.828
+2025-11-02T15:54:04.070665,self,BOOLEAN,DB1,NONE,TERMatat,Null,"""american independence""",phrase,0,33.624
+2025-11-02T15:54:04.147290,self,BOOLEAN,DB1,NONE,TERMatat,Null,"""united states of america"" AND ""american constitution""",mixed,0,76.327
+2025-11-02T15:54:04.416444,self,BOOLEAN,DB1,NONE,TERMatat,Null,"""american independence"" OR america",mixed,0,268.778
+2025-11-02T15:54:04.507798,self,BOOLEAN,DB1,NONE,TERMatat,Null,"""united states of america"" AND NOT constitution",mixed,0,91.057
+2025-11-02T15:54:04.773766,self,BOOLEAN,DB1,NONE,TERMatat,Null,"""north america"" OR ""south america""",mixed,0,265.59
+2025-11-02T15:54:05.145316,self,BOOLEAN,DB1,NONE,TERMatat,Null,"(""america"" AND ""washington"") OR (""congress"" AND ""president"")",grouped,0,371.165
+2025-11-02T15:54:05.501338,self,BOOLEAN,DB1,NONE,TERMatat,Null,"(""america"" OR ""washington"") AND (""congress"" OR ""president"")",grouped,0,355.603
+2025-11-02T15:54:05.929037,self,BOOLEAN,DB1,NONE,TERMatat,Null,"(""america"" AND NOT ""washington"") OR (""washington"" AND NOT ""america"")",grouped,0,427.305
+2025-11-02T15:54:06.268116,self,BOOLEAN,DB1,NONE,TERMatat,Null,"(america OR washington) AND NOT ""congress""",grouped,0,338.641
+2025-11-02T15:54:06.636759,self,BOOLEAN,DB1,NONE,TERMatat,Null,"((""america"" AND ""washington"") OR ""president"") AND NOT ""congress""",nested,0,368.214
+2025-11-02T15:54:07.007234,self,BOOLEAN,DB1,NONE,TERMatat,Null,"((""america"" OR ""washington"") AND (""congress"" OR ""president""))",nested,0,370.084
+2025-11-02T15:54:07.311271,self,BOOLEAN,DB1,NONE,TERMatat,Null,"(""america"" AND (""washington"" OR ""president""))",nested,0,303.669
+2025-11-02T15:54:07.673908,self,BOOLEAN,DB1,NONE,TERMatat,Null,"(""america"" AND (""washington"" AND (""congress"" OR ""president"")))",nested,0,362.268
+2025-11-02T15:54:07.722853,self,BOOLEAN,DB1,NONE,TERMatat,Null,america washington,edge,0,48.641
+2025-11-02T15:54:07.976729,self,BOOLEAN,DB1,NONE,TERMatat,Null,"""united states of america"" OR america",edge,0,253.515
+2025-11-02T15:54:08.083236,self,BOOLEAN,DB1,NONE,TERMatat,Null,"""washington"" AND NOT ""washington""",edge,0,106.219
+2025-11-02T15:54:08.288896,self,BOOLEAN,DB1,NONE,TERMatat,Null,(america),edge,0,205.28
+2025-11-02T15:54:08.577738,self,BOOLEAN,DB1,NONE,TERMatat,Null,"NOT (""america"" AND ""washington"")",edge,0,288.464
+2025-11-02T15:54:08.821442,self,TFIDF,DB1,NONE,TERMatat,Null,america,term,0,241.303
+2025-11-02T15:54:09.052192,self,TFIDF,DB1,NONE,TERMatat,Null,washington,term,0,230.377
+2025-11-02T15:54:09.168296,self,TFIDF,DB1,NONE,TERMatat,Null,constitution,term,0,115.769
+2025-11-02T15:54:09.469033,self,TFIDF,DB1,NONE,TERMatat,Null,america AND washington,boolean,0,300.359
+2025-11-02T15:54:09.772216,self,TFIDF,DB1,NONE,TERMatat,Null,america OR washington,boolean,0,302.801
+2025-11-02T15:54:10.097104,self,TFIDF,DB1,NONE,TERMatat,Null,america AND NOT washington,boolean,0,324.524
+2025-11-02T15:54:10.727102,self,TFIDF,DB1,NONE,TERMatat,Null,NOT america,boolean,0,629.689
+2025-11-02T15:54:10.775700,self,TFIDF,DB1,NONE,TERMatat,Null,"""united states of america""",phrase,0,48.289
+2025-11-02T15:54:10.823875,self,TFIDF,DB1,NONE,TERMatat,Null,"""american constitution""",phrase,0,47.881
+2025-11-02T15:54:10.869371,self,TFIDF,DB1,NONE,TERMatat,Null,"""american independence""",phrase,0,45.189
+2025-11-02T15:54:10.966238,self,TFIDF,DB1,NONE,TERMatat,Null,"""united states of america"" AND ""american constitution""",mixed,0,96.556
+2025-11-02T15:54:11.300374,self,TFIDF,DB1,NONE,TERMatat,Null,"""american independence"" OR america",mixed,0,333.764
+2025-11-02T15:54:11.413863,self,TFIDF,DB1,NONE,TERMatat,Null,"""united states of america"" AND NOT constitution",mixed,0,113.185
+2025-11-02T15:54:11.753897,self,TFIDF,DB1,NONE,TERMatat,Null,"""north america"" OR ""south america""",mixed,0,339.629
+2025-11-02T15:54:12.168350,self,TFIDF,DB1,NONE,TERMatat,Null,"(""america"" AND ""washington"") OR (""congress"" AND ""president"")",grouped,0,414.018
+2025-11-02T15:54:12.566407,self,TFIDF,DB1,NONE,TERMatat,Null,"(""america"" OR ""washington"") AND (""congress"" OR ""president"")",grouped,0,397.644
+2025-11-02T15:54:13.079282,self,TFIDF,DB1,NONE,TERMatat,Null,"(""america"" AND NOT ""washington"") OR (""washington"" AND NOT ""america"")",grouped,0,512.463
+2025-11-02T15:54:13.471796,self,TFIDF,DB1,NONE,TERMatat,Null,"(america OR washington) AND NOT ""congress""",grouped,0,392.069
+2025-11-02T15:54:13.928378,self,TFIDF,DB1,NONE,TERMatat,Null,"((""america"" AND ""washington"") OR ""president"") AND NOT ""congress""",nested,0,456.159
+2025-11-02T15:54:14.376274,self,TFIDF,DB1,NONE,TERMatat,Null,"((""america"" OR ""washington"") AND (""congress"" OR ""president""))",nested,0,447.512
+2025-11-02T15:54:14.725771,self,TFIDF,DB1,NONE,TERMatat,Null,"(""america"" AND (""washington"" OR ""president""))",nested,0,349.097
+2025-11-02T15:54:15.145718,self,TFIDF,DB1,NONE,TERMatat,Null,"(""america"" AND (""washington"" AND (""congress"" OR ""president"")))",nested,0,419.517
+2025-11-02T15:54:15.218210,self,TFIDF,DB1,NONE,TERMatat,Null,america washington,edge,0,72.172
+2025-11-02T15:54:15.544524,self,TFIDF,DB1,NONE,TERMatat,Null,"""united states of america"" OR america",edge,0,325.787
+2025-11-02T15:54:15.665371,self,TFIDF,DB1,NONE,TERMatat,Null,"""washington"" AND NOT ""washington""",edge,0,120.531
+2025-11-02T15:54:15.920204,self,TFIDF,DB1,NONE,TERMatat,Null,(america),edge,0,254.429
+2025-11-02T15:54:16.839596,self,TFIDF,DB1,NONE,TERMatat,Null,"NOT (""america"" AND ""washington"")",edge,0,918.988
+2025-11-03T15:10:01.616651,self,BOOLEAN,CUSTOM,NONE,TERMatat,Null,america,term,0,92567.318,4218523.85,5444328.46
+2025-11-03T15:10:02.855110,self,BOOLEAN,CUSTOM,NONE,TERMatat,Null,washington,term,0,1236.522,27.11,2560.81
+2025-11-03T15:10:04.083649,self,BOOLEAN,CUSTOM,NONE,TERMatat,Null,constitution,term,0,1228.164,4.04,2560.81
+2025-11-03T15:10:07.682257,self,BOOLEAN,CUSTOM,NONE,TERMatat,Null,america AND washington,boolean,0,3598.201,6.23,2907.76
+2025-11-03T15:10:11.296038,self,BOOLEAN,CUSTOM,NONE,TERMatat,Null,america OR washington,boolean,0,3613.188,115.2,2907.71
+2025-11-03T15:10:16.158395,self,BOOLEAN,CUSTOM,NONE,TERMatat,Null,america AND NOT washington,boolean,0,4861.783,81.24,4904.78
+2025-11-03T15:10:18.597123,self,BOOLEAN,CUSTOM,NONE,TERMatat,Null,NOT america,boolean,0,2438.128,114.67,4571.18
+2025-11-03T15:10:19.813174,self,BOOLEAN,CUSTOM,NONE,TERMatat,Null,"""united states of america""",phrase,0,1215.744,2.19,2560.88
+2025-11-03T15:10:21.017153,self,BOOLEAN,CUSTOM,NONE,TERMatat,Null,"""american constitution""",phrase,0,1203.681,3.91,2560.88
+2025-11-03T15:10:22.210685,self,BOOLEAN,CUSTOM,NONE,TERMatat,Null,"""american independence""",phrase,0,1193.232,2.7,2560.88
+2025-11-03T15:10:25.809507,self,BOOLEAN,CUSTOM,NONE,TERMatat,Null,"""united states of america"" AND ""american constitution""",mixed,0,3598.431,4.29,2874.51
+2025-11-03T15:10:29.399070,self,BOOLEAN,CUSTOM,NONE,TERMatat,Null,"""american independence"" OR america",mixed,0,3588.915,114.8,2874.02
+2025-11-03T15:10:35.054195,self,BOOLEAN,CUSTOM,NONE,TERMatat,Null,"""united states of america"" AND NOT constitution",mixed,0,5653.732,4.28,4725.08
+2025-11-03T15:10:38.825007,self,BOOLEAN,CUSTOM,NONE,TERMatat,Null,"""north america"" OR ""south america""",mixed,0,3770.358,5.4,2885.74
+2025-11-03T15:10:47.363915,self,BOOLEAN,CUSTOM,NONE,TERMatat,Null,"(""america"" AND ""washington"") OR (""congress"" AND ""president"")",grouped,0,8538.001,5.94,3221.69
+2025-11-03T15:10:56.043485,self,BOOLEAN,CUSTOM,NONE,TERMatat,Null,"(""america"" OR ""washington"") AND (""congress"" OR ""president"")",grouped,0,8678.212,6.17,3245.23
+2025-11-03T15:11:09.170988,self,BOOLEAN,CUSTOM,NONE,TERMatat,Null,"(""america"" AND NOT ""washington"") OR (""washington"" AND NOT ""america"")",grouped,0,13126.548,114.95,5244.0
+2025-11-03T15:11:17.097734,self,BOOLEAN,CUSTOM,NONE,TERMatat,Null,"(america OR washington) AND NOT ""congress""",grouped,0,7925.406,114.94,4908.65
+2025-11-03T15:11:27.141646,self,BOOLEAN,CUSTOM,NONE,TERMatat,Null,"((""america"" AND ""washington"") OR ""president"") AND NOT ""congress""",nested,0,10043.213,6.13,4871.11
+2025-11-03T15:11:35.619359,self,BOOLEAN,CUSTOM,NONE,TERMatat,Null,"((""america"" OR ""washington"") AND (""congress"" OR ""president""))",nested,0,8477.032,5.52,3245.23
+2025-11-03T15:11:41.568920,self,BOOLEAN,CUSTOM,NONE,TERMatat,Null,"(""america"" AND (""washington"" OR ""president""))",nested,0,5949.152,4.78,3239.36
+2025-11-03T15:11:49.779749,self,BOOLEAN,CUSTOM,NONE,TERMatat,Null,"(""america"" AND (""washington"" AND (""congress"" OR ""president"")))",nested,0,8210.418,6.1,3564.52
+2025-11-03T15:11:50.965999,self,BOOLEAN,CUSTOM,NONE,TERMatat,Null,america washington,edge,0,1185.849,4.42,2560.88
+2025-11-03T15:11:54.358369,self,BOOLEAN,CUSTOM,NONE,TERMatat,Null,"""united states of america"" OR america",edge,0,3391.77,114.1,2873.96
+2025-11-03T15:11:58.910538,self,BOOLEAN,CUSTOM,NONE,TERMatat,Null,"""washington"" AND NOT ""washington""",edge,0,4551.825,4.05,4890.62
+2025-11-03T15:12:00.093500,self,BOOLEAN,CUSTOM,NONE,TERMatat,Null,(america),edge,0,1182.398,114.32,2560.87
+2025-11-03T15:12:04.771655,self,BOOLEAN,CUSTOM,NONE,TERMatat,Null,"NOT (""america"" AND ""washington"")",edge,0,4677.574,114.24,4449.59
+2025-11-03T15:14:41.706611,self,TFIDF,CUSTOM,NONE,TERMatat,Null,america,term,0,140663.127,4931028.46,7083539.22
+2025-11-03T15:14:43.221874,self,TFIDF,CUSTOM,NONE,TERMatat,Null,washington,term,0,1514.277,25.66,2560.81
+2025-11-03T15:14:44.406961,self,TFIDF,CUSTOM,NONE,TERMatat,Null,constitution,term,0,1184.691,4.06,2560.81
+2025-11-03T15:14:47.993700,self,TFIDF,CUSTOM,NONE,TERMatat,Null,america AND washington,boolean,0,3586.323,7.75,2907.23
+2025-11-03T15:14:51.723699,self,TFIDF,CUSTOM,NONE,TERMatat,Null,america OR washington,boolean,0,3729.482,67.15,2907.18
+2025-11-03T15:14:56.850073,self,TFIDF,CUSTOM,NONE,TERMatat,Null,america AND NOT washington,boolean,0,5125.829,50.84,4903.85
+2025-11-03T15:15:02.414022,self,TFIDF,CUSTOM,NONE,TERMatat,Null,NOT america,boolean,0,5563.622,3.44,4571.18
+2025-11-03T15:15:03.610713,self,TFIDF,CUSTOM,NONE,TERMatat,Null,"""united states of america""",phrase,0,1196.395,2.19,2560.88
+2025-11-03T15:15:04.797109,self,TFIDF,CUSTOM,NONE,TERMatat,Null,"""american constitution""",phrase,0,1186.105,3.91,2560.88
+2025-11-03T15:15:05.951046,self,TFIDF,CUSTOM,NONE,TERMatat,Null,"""american independence""",phrase,0,1153.653,2.65,2560.88
+2025-11-03T15:15:09.442441,self,TFIDF,CUSTOM,NONE,TERMatat,Null,"""united states of america"" AND ""american constitution""",mixed,0,3491.097,3.72,2873.98
+2025-11-03T15:15:13.063380,self,TFIDF,CUSTOM,NONE,TERMatat,Null,"""american independence"" OR america",mixed,0,3620.433,56.91,2874.02
+2025-11-03T15:15:17.822461,self,TFIDF,CUSTOM,NONE,TERMatat,Null,"""united states of america"" AND NOT constitution",mixed,0,4758.778,3.74,4724.54
+2025-11-03T15:15:22.041891,self,TFIDF,CUSTOM,NONE,TERMatat,Null,"""north america"" OR ""south america""",mixed,0,4219.126,3.55,2885.7
+2025-11-03T15:15:31.166473,self,TFIDF,CUSTOM,NONE,TERMatat,Null,"(""america"" AND ""washington"") OR (""congress"" AND ""president"")",grouped,0,9124.156,8.27,3221.69
+2025-11-03T15:15:39.706189,self,TFIDF,CUSTOM,NONE,TERMatat,Null,"(""america"" OR ""washington"") AND (""congress"" OR ""president"")",grouped,0,8539.29,7.66,3244.7
+2025-11-03T15:15:50.508817,self,TFIDF,CUSTOM,NONE,TERMatat,Null,"(""america"" AND NOT ""washington"") OR (""washington"" AND NOT ""america"")",grouped,0,10802.094,66.67,5244.0
+2025-11-03T15:15:57.840143,self,TFIDF,CUSTOM,NONE,TERMatat,Null,"(america OR washington) AND NOT ""congress""",grouped,0,7330.777,66.99,4908.65
+2025-11-03T15:16:06.946216,self,TFIDF,CUSTOM,NONE,TERMatat,Null,"((""america"" AND ""washington"") OR ""president"") AND NOT ""congress""",nested,0,9105.633,8.18,4871.11
+2025-11-03T15:16:15.604842,self,TFIDF,CUSTOM,NONE,TERMatat,Null,"((""america"" OR ""washington"") AND (""congress"" OR ""president""))",nested,0,8658.148,7.54,3245.23
+2025-11-03T15:16:23.107965,self,TFIDF,CUSTOM,NONE,TERMatat,Null,"(""america"" AND (""washington"" OR ""president""))",nested,0,7502.393,7.11,3239.36
+2025-11-03T15:16:31.380566,self,TFIDF,CUSTOM,NONE,TERMatat,Null,"(""america"" AND (""washington"" AND (""congress"" OR ""president"")))",nested,0,8271.722,7.2,3564.52
+2025-11-03T15:16:32.497244,self,TFIDF,CUSTOM,NONE,TERMatat,Null,america washington,edge,0,1116.268,4.47,2560.88
+2025-11-03T15:16:35.982235,self,TFIDF,CUSTOM,NONE,TERMatat,Null,"""united states of america"" OR america",edge,0,3484.497,56.26,2873.96
+2025-11-03T15:16:40.818390,self,TFIDF,CUSTOM,NONE,TERMatat,Null,"""washington"" AND NOT ""washington""",edge,0,4835.864,4.05,4890.62
+2025-11-03T15:16:42.178986,self,TFIDF,CUSTOM,NONE,TERMatat,Null,(america),edge,0,1360.085,56.56,2560.87
+2025-11-03T15:16:50.595209,self,TFIDF,CUSTOM,NONE,TERMatat,Null,"NOT (""america"" AND ""washington"")",edge,0,8415.201,65.87,4449.59
+2025-11-03T15:18:30.868570,self,WORDCOUNT,CUSTOM,NONE,TERMatat,Null,america,term,0,87267.897,4218427.84,4985174.27
+2025-11-03T15:18:32.416671,self,WORDCOUNT,CUSTOM,NONE,TERMatat,Null,washington,term,0,1546.931,22.52,2560.81
+2025-11-03T15:18:33.743623,self,WORDCOUNT,CUSTOM,NONE,TERMatat,Null,constitution,term,0,1326.564,4.08,2560.81
+2025-11-03T15:18:37.534412,self,WORDCOUNT,CUSTOM,NONE,TERMatat,Null,america AND washington,boolean,0,3790.358,5.4,2907.27
+2025-11-03T15:18:41.810835,self,WORDCOUNT,CUSTOM,NONE,TERMatat,Null,america OR washington,boolean,0,4275.838,107.7,2907.22
+2025-11-03T15:18:47.199820,self,WORDCOUNT,CUSTOM,NONE,TERMatat,Null,america AND NOT washington,boolean,0,5388.508,47.26,4903.89
+2025-11-03T15:18:52.584403,self,WORDCOUNT,CUSTOM,NONE,TERMatat,Null,NOT america,boolean,0,5384.276,3.48,4571.23
+2025-11-03T15:18:53.668936,self,WORDCOUNT,CUSTOM,NONE,TERMatat,Null,"""united states of america""",phrase,0,1084.234,2.24,2560.88
+2025-11-03T15:18:54.785463,self,WORDCOUNT,CUSTOM,NONE,TERMatat,Null,"""american constitution""",phrase,0,1116.225,3.95,2560.88
+2025-11-03T15:18:55.894216,self,WORDCOUNT,CUSTOM,NONE,TERMatat,Null,"""american independence""",phrase,0,1108.464,2.7,2560.88
+2025-11-03T15:18:59.161516,self,WORDCOUNT,CUSTOM,NONE,TERMatat,Null,"""united states of america"" AND ""american constitution""",mixed,0,3267.002,3.76,2873.98
+2025-11-03T15:19:02.759676,self,WORDCOUNT,CUSTOM,NONE,TERMatat,Null,"""american independence"" OR america",mixed,0,3597.661,68.4,2874.02
+2025-11-03T15:19:07.126799,self,WORDCOUNT,CUSTOM,NONE,TERMatat,Null,"""united states of america"" AND NOT constitution",mixed,0,4366.832,3.74,4724.54
+2025-11-03T15:19:10.488875,self,WORDCOUNT,CUSTOM,NONE,TERMatat,Null,"""north america"" OR ""south america""",mixed,0,3361.769,3.64,2885.8
+2025-11-03T15:19:18.922938,self,WORDCOUNT,CUSTOM,NONE,TERMatat,Null,"(""america"" AND ""washington"") OR (""congress"" AND ""president"")",grouped,0,8432.654,5.96,3221.74
+2025-11-03T15:19:27.088656,self,WORDCOUNT,CUSTOM,NONE,TERMatat,Null,"(""america"" OR ""washington"") AND (""congress"" OR ""president"")",grouped,0,8165.054,5.67,3244.75
+2025-11-03T15:19:39.212578,self,WORDCOUNT,CUSTOM,NONE,TERMatat,Null,"(""america"" AND NOT ""washington"") OR (""washington"" AND NOT ""america"")",grouped,0,12123.213,98.54,5244.05
+2025-11-03T15:19:46.767744,self,WORDCOUNT,CUSTOM,NONE,TERMatat,Null,"(america OR washington) AND NOT ""congress""",grouped,0,7554.597,96.5,4908.69
+2025-11-03T15:19:56.572330,self,WORDCOUNT,CUSTOM,NONE,TERMatat,Null,"((""america"" AND ""washington"") OR ""president"") AND NOT ""congress""",nested,0,9803.148,6.29,4871.15
+2025-11-03T15:20:05.234988,self,WORDCOUNT,CUSTOM,NONE,TERMatat,Null,"((""america"" OR ""washington"") AND (""congress"" OR ""president""))",nested,0,8662.091,5.55,3245.28
+2025-11-03T15:20:11.832360,self,WORDCOUNT,CUSTOM,NONE,TERMatat,Null,"(""america"" AND (""washington"" OR ""president""))",nested,0,6596.881,4.81,3239.4
+2025-11-03T15:20:20.984172,self,WORDCOUNT,CUSTOM,NONE,TERMatat,Null,"(""america"" AND (""washington"" AND (""congress"" OR ""president"")))",nested,0,9150.908,6.21,3564.67
+2025-11-03T15:20:22.174139,self,WORDCOUNT,CUSTOM,NONE,TERMatat,Null,america washington,edge,0,1189.548,4.45,2560.88
+2025-11-03T15:20:25.941866,self,WORDCOUNT,CUSTOM,NONE,TERMatat,Null,"""united states of america"" OR america",edge,0,3767.25,67.75,2873.96
+2025-11-03T15:20:30.699044,self,WORDCOUNT,CUSTOM,NONE,TERMatat,Null,"""washington"" AND NOT ""washington""",edge,0,4756.898,4.1,4890.66
+2025-11-03T15:20:31.949865,self,WORDCOUNT,CUSTOM,NONE,TERMatat,Null,(america),edge,0,1250.315,68.06,2560.87
+2025-11-03T15:20:40.075096,self,WORDCOUNT,CUSTOM,NONE,TERMatat,Null,"NOT (""america"" AND ""washington"")",edge,0,8124.536,97.74,4449.64
+2025-11-02T15:54:02.590924,self,BOOLEAN,DB1,NONE,TERMatat,Null,america,term,0,221.827
+2025-11-02T15:54:02.801744,self,BOOLEAN,DB1,NONE,TERMatat,Null,washington,term,0,210.368
+2025-11-02T15:54:02.903353,self,BOOLEAN,DB1,NONE,TERMatat,Null,constitution,term,0,101.149
+2025-11-02T15:54:03.175993,self,BOOLEAN,DB1,NONE,TERMatat,Null,america AND washington,boolean,0,272.209
+2025-11-02T15:54:03.449228,self,BOOLEAN,DB1,NONE,TERMatat,Null,america OR washington,boolean,0,272.846
+2025-11-02T15:54:03.732958,self,BOOLEAN,DB1,NONE,TERMatat,Null,america AND NOT washington,boolean,0,283.337
+2025-11-02T15:54:03.975018,self,BOOLEAN,DB1,NONE,TERMatat,Null,NOT america,boolean,0,241.665
+2025-11-02T15:54:04.000642,self,BOOLEAN,DB1,NONE,TERMatat,Null,"""united states of america""",phrase,0,25.332
+2025-11-02T15:54:04.036762,self,BOOLEAN,DB1,NONE,TERMatat,Null,"""american constitution""",phrase,0,35.828
+2025-11-02T15:54:04.070665,self,BOOLEAN,DB1,NONE,TERMatat,Null,"""american independence""",phrase,0,33.624
+2025-11-02T15:54:04.147290,self,BOOLEAN,DB1,NONE,TERMatat,Null,"""united states of america"" AND ""american constitution""",mixed,0,76.327
+2025-11-02T15:54:04.416444,self,BOOLEAN,DB1,NONE,TERMatat,Null,"""american independence"" OR america",mixed,0,268.778
+2025-11-02T15:54:04.507798,self,BOOLEAN,DB1,NONE,TERMatat,Null,"""united states of america"" AND NOT constitution",mixed,0,91.057
+2025-11-02T15:54:04.773766,self,BOOLEAN,DB1,NONE,TERMatat,Null,"""north america"" OR ""south america""",mixed,0,265.59
+2025-11-02T15:54:05.145316,self,BOOLEAN,DB1,NONE,TERMatat,Null,"(""america"" AND ""washington"") OR (""congress"" AND ""president"")",grouped,0,371.165
+2025-11-02T15:54:05.501338,self,BOOLEAN,DB1,NONE,TERMatat,Null,"(""america"" OR ""washington"") AND (""congress"" OR ""president"")",grouped,0,355.603
+2025-11-02T15:54:05.929037,self,BOOLEAN,DB1,NONE,TERMatat,Null,"(""america"" AND NOT ""washington"") OR (""washington"" AND NOT ""america"")",grouped,0,427.305
+2025-11-02T15:54:06.268116,self,BOOLEAN,DB1,NONE,TERMatat,Null,"(america OR washington) AND NOT ""congress""",grouped,0,338.641
+2025-11-02T15:54:06.636759,self,BOOLEAN,DB1,NONE,TERMatat,Null,"((""america"" AND ""washington"") OR ""president"") AND NOT ""congress""",nested,0,368.214
+2025-11-02T15:54:07.007234,self,BOOLEAN,DB1,NONE,TERMatat,Null,"((""america"" OR ""washington"") AND (""congress"" OR ""president""))",nested,0,370.084
+2025-11-02T15:54:07.311271,self,BOOLEAN,DB1,NONE,TERMatat,Null,"(""america"" AND (""washington"" OR ""president""))",nested,0,303.669
+2025-11-02T15:54:07.673908,self,BOOLEAN,DB1,NONE,TERMatat,Null,"(""america"" AND (""washington"" AND (""congress"" OR ""president"")))",nested,0,362.268
+2025-11-02T15:54:07.722853,self,BOOLEAN,DB1,NONE,TERMatat,Null,america washington,edge,0,48.641
+2025-11-02T15:54:07.976729,self,BOOLEAN,DB1,NONE,TERMatat,Null,"""united states of america"" OR america",edge,0,253.515
+2025-11-02T15:54:08.083236,self,BOOLEAN,DB1,NONE,TERMatat,Null,"""washington"" AND NOT ""washington""",edge,0,106.219
+2025-11-02T15:54:08.288896,self,BOOLEAN,DB1,NONE,TERMatat,Null,(america),edge,0,205.28
+2025-11-02T15:54:08.577738,self,BOOLEAN,DB1,NONE,TERMatat,Null,"NOT (""america"" AND ""washington"")",edge,0,288.464
+2025-11-02T15:54:08.821442,self,TFIDF,DB1,NONE,TERMatat,Null,america,term,0,241.303
+2025-11-02T15:54:09.052192,self,TFIDF,DB1,NONE,TERMatat,Null,washington,term,0,230.377
+2025-11-02T15:54:09.168296,self,TFIDF,DB1,NONE,TERMatat,Null,constitution,term,0,115.769
+2025-11-02T15:54:09.469033,self,TFIDF,DB1,NONE,TERMatat,Null,america AND washington,boolean,0,300.359
+2025-11-02T15:54:09.772216,self,TFIDF,DB1,NONE,TERMatat,Null,america OR washington,boolean,0,302.801
+2025-11-02T15:54:10.097104,self,TFIDF,DB1,NONE,TERMatat,Null,america AND NOT washington,boolean,0,324.524
+2025-11-02T15:54:10.727102,self,TFIDF,DB1,NONE,TERMatat,Null,NOT america,boolean,0,629.689
+2025-11-02T15:54:10.775700,self,TFIDF,DB1,NONE,TERMatat,Null,"""united states of america""",phrase,0,48.289
+2025-11-02T15:54:10.823875,self,TFIDF,DB1,NONE,TERMatat,Null,"""american constitution""",phrase,0,47.881
+2025-11-02T15:54:10.869371,self,TFIDF,DB1,NONE,TERMatat,Null,"""american independence""",phrase,0,45.189
+2025-11-02T15:54:10.966238,self,TFIDF,DB1,NONE,TERMatat,Null,"""united states of america"" AND ""american constitution""",mixed,0,96.556
+2025-11-02T15:54:11.300374,self,TFIDF,DB1,NONE,TERMatat,Null,"""american independence"" OR america",mixed,0,333.764
+2025-11-02T15:54:11.413863,self,TFIDF,DB1,NONE,TERMatat,Null,"""united states of america"" AND NOT constitution",mixed,0,113.185
+2025-11-02T15:54:11.753897,self,TFIDF,DB1,NONE,TERMatat,Null,"""north america"" OR ""south america""",mixed,0,339.629
+2025-11-02T15:54:12.168350,self,TFIDF,DB1,NONE,TERMatat,Null,"(""america"" AND ""washington"") OR (""congress"" AND ""president"")",grouped,0,414.018
+2025-11-02T15:54:12.566407,self,TFIDF,DB1,NONE,TERMatat,Null,"(""america"" OR ""washington"") AND (""congress"" OR ""president"")",grouped,0,397.644
+2025-11-02T15:54:13.079282,self,TFIDF,DB1,NONE,TERMatat,Null,"(""america"" AND NOT ""washington"") OR (""washington"" AND NOT ""america"")",grouped,0,512.463
+2025-11-02T15:54:13.471796,self,TFIDF,DB1,NONE,TERMatat,Null,"(america OR washington) AND NOT ""congress""",grouped,0,392.069
+2025-11-02T15:54:13.928378,self,TFIDF,DB1,NONE,TERMatat,Null,"((""america"" AND ""washington"") OR ""president"") AND NOT ""congress""",nested,0,456.159
+2025-11-02T15:54:14.376274,self,TFIDF,DB1,NONE,TERMatat,Null,"((""america"" OR ""washington"") AND (""congress"" OR ""president""))",nested,0,447.512
+2025-11-02T15:54:14.725771,self,TFIDF,DB1,NONE,TERMatat,Null,"(""america"" AND (""washington"" OR ""president""))",nested,0,349.097
+2025-11-02T15:54:15.145718,self,TFIDF,DB1,NONE,TERMatat,Null,"(""america"" AND (""washington"" AND (""congress"" OR ""president"")))",nested,0,419.517
+2025-11-02T15:54:15.218210,self,TFIDF,DB1,NONE,TERMatat,Null,america washington,edge,0,72.172
+2025-11-02T15:54:15.544524,self,TFIDF,DB1,NONE,TERMatat,Null,"""united states of america"" OR america",edge,0,325.787
+2025-11-02T15:54:15.665371,self,TFIDF,DB1,NONE,TERMatat,Null,"""washington"" AND NOT ""washington""",edge,0,120.531
+2025-11-02T15:54:15.920204,self,TFIDF,DB1,NONE,TERMatat,Null,(america),edge,0,254.429
+2025-11-02T15:54:16.839596,self,TFIDF,DB1,NONE,TERMatat,Null,"NOT (""america"" AND ""washington"")",edge,0,918.988
+2025-11-02T15:54:17.073736,self,WORDCOUNT,DB1,NONE,TERMatat,Null,america,term,0,231.435
+2025-11-02T15:54:17.295813,self,WORDCOUNT,DB1,NONE,TERMatat,Null,washington,term,0,221.68
+2025-11-02T15:54:17.392113,self,WORDCOUNT,DB1,NONE,TERMatat,Null,constitution,term,0,95.954
+2025-11-02T15:54:17.669125,self,WORDCOUNT,DB1,NONE,TERMatat,Null,america AND washington,boolean,0,276.631
+2025-11-02T15:54:17.949047,self,WORDCOUNT,DB1,NONE,TERMatat,Null,america OR washington,boolean,0,279.531
+2025-11-02T15:54:18.259764,self,WORDCOUNT,DB1,NONE,TERMatat,Null,america AND NOT washington,boolean,0,310.323
+2025-11-02T15:54:18.853233,self,WORDCOUNT,DB1,NONE,TERMatat,Null,NOT america,boolean,0,593.148
+2025-11-02T15:54:18.882309,self,WORDCOUNT,DB1,NONE,TERMatat,Null,"""united states of america""",phrase,0,28.772
+2025-11-02T15:54:18.913836,self,WORDCOUNT,DB1,NONE,TERMatat,Null,"""american constitution""",phrase,0,31.239
+2025-11-02T15:54:18.941291,self,WORDCOUNT,DB1,NONE,TERMatat,Null,"""american independence""",phrase,0,27.193
+2025-11-02T15:54:19.019425,self,WORDCOUNT,DB1,NONE,TERMatat,Null,"""united states of america"" AND ""american constitution""",mixed,0,77.851
+2025-11-02T15:54:19.344935,self,WORDCOUNT,DB1,NONE,TERMatat,Null,"""american independence"" OR america",mixed,0,325.093
+2025-11-02T15:54:19.434271,self,WORDCOUNT,DB1,NONE,TERMatat,Null,"""united states of america"" AND NOT constitution",mixed,0,88.993
+2025-11-02T15:54:19.750653,self,WORDCOUNT,DB1,NONE,TERMatat,Null,"""north america"" OR ""south america""",mixed,0,315.98
+2025-11-02T15:54:20.127223,self,WORDCOUNT,DB1,NONE,TERMatat,Null,"(""america"" AND ""washington"") OR (""congress"" AND ""president"")",grouped,0,376.119
+2025-11-02T15:54:20.518881,self,WORDCOUNT,DB1,NONE,TERMatat,Null,"(""america"" OR ""washington"") AND (""congress"" OR ""president"")",grouped,0,391.241
+2025-11-02T15:54:20.990917,self,WORDCOUNT,DB1,NONE,TERMatat,Null,"(""america"" AND NOT ""washington"") OR (""washington"" AND NOT ""america"")",grouped,0,471.605
+2025-11-02T15:54:21.357112,self,WORDCOUNT,DB1,NONE,TERMatat,Null,"(america OR washington) AND NOT ""congress""",grouped,0,365.795
+2025-11-02T15:54:21.768087,self,WORDCOUNT,DB1,NONE,TERMatat,Null,"((""america"" AND ""washington"") OR ""president"") AND NOT ""congress""",nested,0,410.594
+2025-11-02T15:54:22.140585,self,WORDCOUNT,DB1,NONE,TERMatat,Null,"((""america"" OR ""washington"") AND (""congress"" OR ""president""))",nested,0,372.121
+2025-11-02T15:54:22.453142,self,WORDCOUNT,DB1,NONE,TERMatat,Null,"(""america"" AND (""washington"" OR ""president""))",nested,0,312.179
+2025-11-02T15:54:22.803908,self,WORDCOUNT,DB1,NONE,TERMatat,Null,"(""america"" AND (""washington"" AND (""congress"" OR ""president"")))",nested,0,350.393
+2025-11-02T15:54:22.852184,self,WORDCOUNT,DB1,NONE,TERMatat,Null,america washington,edge,0,47.95
+2025-11-02T15:54:23.120797,self,WORDCOUNT,DB1,NONE,TERMatat,Null,"""united states of america"" OR america",edge,0,268.246
+2025-11-02T15:54:23.223391,self,WORDCOUNT,DB1,NONE,TERMatat,Null,"""washington"" AND NOT ""washington""",edge,0,102.298
+2025-11-02T15:54:23.442416,self,WORDCOUNT,DB1,NONE,TERMatat,Null,(america),edge,0,218.656
+2025-11-02T15:54:24.314116,self,WORDCOUNT,DB1,NONE,TERMatat,Null,"NOT (""america"" AND ""washington"")",edge,0,871.186
+2025-11-03T07:38:30.880797,self,BOOLEAN,DB2,NONE,TERMatat,Null,america,term,0,217.274,236.05,15278.49
+2025-11-03T07:38:31.048194,self,BOOLEAN,DB2,NONE,TERMatat,Null,washington,term,0,166.868,40.46,14231.29
+2025-11-03T07:38:31.189560,self,BOOLEAN,DB2,NONE,TERMatat,Null,constitution,term,0,140.992,4.11,13106.66
+2025-11-03T07:38:31.622143,self,BOOLEAN,DB2,NONE,TERMatat,Null,america AND washington,boolean,0,431.847,130.23,19207.97
+2025-11-03T07:38:32.018951,self,BOOLEAN,DB2,NONE,TERMatat,Null,america OR washington,boolean,0,396.15,128.45,19098.24
+2025-11-03T07:38:32.495451,self,BOOLEAN,DB2,NONE,TERMatat,Null,america AND NOT washington,boolean,0,475.802,94.04,23245.55
+2025-11-03T07:38:32.787528,self,BOOLEAN,DB2,NONE,TERMatat,Null,NOT america,boolean,0,291.314,127.84,19243.39
+2025-11-03T07:38:32.946267,self,BOOLEAN,DB2,NONE,TERMatat,Null,"""united states of america""",phrase,0,158.391,3.21,14911.63
+2025-11-03T07:38:33.189409,self,BOOLEAN,DB2,NONE,TERMatat,Null,"""american constitution""",phrase,0,242.756,6.0,19076.86
+2025-11-03T07:38:33.398287,self,BOOLEAN,DB2,NONE,TERMatat,Null,"""american independence""",phrase,0,208.514,3.29,19072.6
+2025-11-03T07:38:33.786691,self,BOOLEAN,DB2,NONE,TERMatat,Null,"""united states of america"" AND ""american constitution""",mixed,0,388.03,4.82,20904.62
+2025-11-03T07:38:34.274196,self,BOOLEAN,DB2,NONE,TERMatat,Null,"""american independence"" OR america",mixed,0,486.78,128.55,23218.95
+2025-11-03T07:38:34.687175,self,BOOLEAN,DB2,NONE,TERMatat,Null,"""united states of america"" AND NOT constitution",mixed,0,412.621,5.68,23204.88
+2025-11-03T07:38:35.147743,self,BOOLEAN,DB2,NONE,TERMatat,Null,"""north america"" OR ""south america""",mixed,0,460.077,22.52,23041.57
+2025-11-03T07:38:35.897393,self,BOOLEAN,DB2,NONE,TERMatat,Null,"(""america"" AND ""washington"") OR (""congress"" AND ""president"")",grouped,0,749.117,19.3,24911.1
+2025-11-03T07:38:36.721711,self,BOOLEAN,DB2,NONE,TERMatat,Null,"(""america"" OR ""washington"") AND (""congress"" OR ""president"")",grouped,0,823.566,129.74,25059.74
+2025-11-03T07:38:37.707357,self,BOOLEAN,DB2,NONE,TERMatat,Null,"(""america"" AND NOT ""washington"") OR (""washington"" AND NOT ""america"")",grouped,0,984.816,128.84,28654.88
+2025-11-03T07:38:38.386375,self,BOOLEAN,DB2,NONE,TERMatat,Null,"(america OR washington) AND NOT ""congress""",grouped,0,678.263,128.19,24331.62
+2025-11-03T07:38:39.209231,self,BOOLEAN,DB2,NONE,TERMatat,Null,"((""america"" AND ""washington"") OR ""president"") AND NOT ""congress""",nested,0,822.417,19.26,27392.26
+2025-11-03T07:38:39.986673,self,BOOLEAN,DB2,NONE,TERMatat,Null,"((""america"" OR ""washington"") AND (""congress"" OR ""president""))",nested,0,776.721,128.67,25059.32
+2025-11-03T07:38:40.525655,self,BOOLEAN,DB2,NONE,TERMatat,Null,"(""america"" AND (""washington"" OR ""president""))",nested,0,538.528,19.93,24338.91
+2025-11-03T07:38:41.253140,self,BOOLEAN,DB2,NONE,TERMatat,Null,"(""america"" AND (""washington"" AND (""congress"" OR ""president"")))",nested,0,726.938,21.02,29104.13
+2025-11-03T07:38:41.424856,self,BOOLEAN,DB2,NONE,TERMatat,Null,america washington,edge,0,171.238,12.57,15988.59
+2025-11-03T07:38:41.774497,self,BOOLEAN,DB2,NONE,TERMatat,Null,"""united states of america"" OR america",edge,0,349.015,127.93,19057.97
+2025-11-03T07:38:42.201257,self,BOOLEAN,DB2,NONE,TERMatat,Null,"""washington"" AND NOT ""washington""",edge,0,426.398,16.77,22482.8
+2025-11-03T07:38:42.432452,self,BOOLEAN,DB2,NONE,TERMatat,Null,(america),edge,0,230.592,128.18,15207.39
+2025-11-03T07:38:42.912259,self,BOOLEAN,DB2,NONE,TERMatat,Null,"NOT (""america"" AND ""washington"")",edge,0,479.198,129.39,23245.51
+2025-11-03T07:38:42.915105,self,TFIDF,DB2,NONE,TERMatat,Null,america,term,0,0.211,2.55,4.88
+2025-11-03T07:38:42.915470,self,TFIDF,DB2,NONE,TERMatat,Null,washington,term,0,0.146,2.55,4.88
+2025-11-03T07:38:42.915753,self,TFIDF,DB2,NONE,TERMatat,Null,constitution,term,0,0.134,2.56,4.89
+2025-11-03T07:38:42.916129,self,TFIDF,DB2,NONE,TERMatat,Null,america AND washington,boolean,0,0.217,2.65,5.58
+2025-11-03T07:38:42.916516,self,TFIDF,DB2,NONE,TERMatat,Null,america OR washington,boolean,0,0.203,2.65,5.57
+2025-11-03T07:38:42.916862,self,TFIDF,DB2,NONE,TERMatat,Null,america AND NOT washington,boolean,0,0.196,3.65,6.81
+2025-11-03T07:38:42.917154,self,TFIDF,DB2,NONE,TERMatat,Null,NOT america,boolean,0,0.154,2.62,5.3
+2025-11-03T07:38:42.917469,self,TFIDF,DB2,NONE,TERMatat,Null,"""united states of america""",phrase,0,0.174,2.59,5.27
+2025-11-03T07:38:42.917776,self,TFIDF,DB2,NONE,TERMatat,Null,"""american constitution""",phrase,0,0.166,2.58,5.16
+2025-11-03T07:38:42.918047,self,TFIDF,DB2,NONE,TERMatat,Null,"""american independence""",phrase,0,0.142,2.58,5.16
+2025-11-03T07:38:42.918353,self,TFIDF,DB2,NONE,TERMatat,Null,"""united states of america"" AND ""american constitution""",mixed,0,0.177,2.72,6.31
+2025-11-03T07:38:42.918649,self,TFIDF,DB2,NONE,TERMatat,Null,"""american independence"" OR america",mixed,0,0.167,2.68,5.74
+2025-11-03T07:38:42.918973,self,TFIDF,DB2,NONE,TERMatat,Null,"""united states of america"" AND NOT constitution",mixed,0,0.191,2.77,6.18
+2025-11-03T07:38:42.919260,self,TFIDF,DB2,NONE,TERMatat,Null,"""north america"" OR ""south america""",mixed,0,0.161,2.68,5.78
+2025-11-03T07:38:42.919672,self,TFIDF,DB2,NONE,TERMatat,Null,"(""america"" AND ""washington"") OR (""congress"" AND ""president"")",grouped,0,0.271,3.7,7.76
+2025-11-03T07:38:42.920245,self,TFIDF,DB2,NONE,TERMatat,Null,"(""america"" OR ""washington"") AND (""congress"" OR ""president"")",grouped,0,0.324,3.28,7.34
+2025-11-03T07:38:42.920696,self,TFIDF,DB2,NONE,TERMatat,Null,"(""america"" AND NOT ""washington"") OR (""washington"" AND NOT ""america"")",grouped,0,0.284,3.36,8.37
+2025-11-03T07:38:42.921066,self,TFIDF,DB2,NONE,TERMatat,Null,"(america OR washington) AND NOT ""congress""",grouped,0,0.222,2.8,6.8
+2025-11-03T07:38:42.921467,self,TFIDF,DB2,NONE,TERMatat,Null,"((""america"" AND ""washington"") OR ""president"") AND NOT ""congress""",nested,0,0.256,3.75,8.35
+2025-11-03T07:38:42.921850,self,TFIDF,DB2,NONE,TERMatat,Null,"((""america"" OR ""washington"") AND (""congress"" OR ""president""))",nested,0,0.248,3.28,7.34
+2025-11-03T07:38:42.922279,self,TFIDF,DB2,NONE,TERMatat,Null,"(""america"" AND (""washington"" OR ""president""))",nested,0,0.297,2.44,5.97
+2025-11-03T07:38:42.922669,self,TFIDF,DB2,NONE,TERMatat,Null,"(""america"" AND (""washington"" AND (""congress"" OR ""president"")))",nested,0,0.25,3.73,7.79
+2025-11-03T07:38:42.922936,self,TFIDF,DB2,NONE,TERMatat,Null,america washington,edge,0,0.139,2.23,4.9
+2025-11-03T07:38:42.923243,self,TFIDF,DB2,NONE,TERMatat,Null,"""united states of america"" OR america",edge,0,0.18,2.33,5.49
+2025-11-03T07:38:42.923536,self,TFIDF,DB2,NONE,TERMatat,Null,"""washington"" AND NOT ""washington""",edge,0,0.167,2.88,6.23
+2025-11-03T07:38:42.923797,self,TFIDF,DB2,NONE,TERMatat,Null,(america),edge,0,0.134,2.25,4.66
+2025-11-03T07:38:42.924100,self,TFIDF,DB2,NONE,TERMatat,Null,"NOT (""america"" AND ""washington"")",edge,0,0.175,2.43,5.6
+2025-11-03T07:38:42.926375,self,WORDCOUNT,DB2,NONE,TERMatat,Null,america,term,0,0.15,2.72,5.05
+2025-11-03T07:38:42.926678,self,WORDCOUNT,DB2,NONE,TERMatat,Null,washington,term,0,0.142,2.21,4.54
+2025-11-03T07:38:42.926947,self,WORDCOUNT,DB2,NONE,TERMatat,Null,constitution,term,0,0.133,2.21,4.54
+2025-11-03T07:38:42.927251,self,WORDCOUNT,DB2,NONE,TERMatat,Null,america AND washington,boolean,0,0.17,2.31,5.23
+2025-11-03T07:38:42.927546,self,WORDCOUNT,DB2,NONE,TERMatat,Null,america OR washington,boolean,0,0.16,2.3,5.23
+2025-11-03T07:38:42.927915,self,WORDCOUNT,DB2,NONE,TERMatat,Null,america AND NOT washington,boolean,0,0.196,2.38,5.54
+2025-11-03T07:38:42.928205,self,WORDCOUNT,DB2,NONE,TERMatat,Null,NOT america,boolean,0,0.154,2.27,4.95
+2025-11-03T07:38:42.928503,self,WORDCOUNT,DB2,NONE,TERMatat,Null,"""united states of america""",phrase,0,0.166,2.24,4.93
+2025-11-03T07:38:42.928786,self,WORDCOUNT,DB2,NONE,TERMatat,Null,"""american constitution""",phrase,0,0.147,2.23,4.82
+2025-11-03T07:38:42.929063,self,WORDCOUNT,DB2,NONE,TERMatat,Null,"""american independence""",phrase,0,0.145,2.23,4.82
+2025-11-03T07:38:42.929386,self,WORDCOUNT,DB2,NONE,TERMatat,Null,"""united states of america"" AND ""american constitution""",mixed,0,0.189,2.37,5.97
+2025-11-03T07:38:42.929695,self,WORDCOUNT,DB2,NONE,TERMatat,Null,"""american independence"" OR america",mixed,0,0.173,2.33,5.39
+2025-11-03T07:38:42.930132,self,WORDCOUNT,DB2,NONE,TERMatat,Null,"""united states of america"" AND NOT constitution",mixed,0,0.244,2.42,5.83
+2025-11-03T07:38:42.930463,self,WORDCOUNT,DB2,NONE,TERMatat,Null,"""north america"" OR ""south america""",mixed,0,0.187,2.38,5.48
+2025-11-03T07:38:42.930841,self,WORDCOUNT,DB2,NONE,TERMatat,Null,"(""america"" AND ""washington"") OR (""congress"" AND ""president"")",grouped,0,0.233,3.29,7.35
+2025-11-03T07:38:42.931188,self,WORDCOUNT,DB2,NONE,TERMatat,Null,"(""america"" OR ""washington"") AND (""congress"" OR ""president"")",grouped,0,0.218,2.82,6.89
+2025-11-03T07:38:42.931561,self,WORDCOUNT,DB2,NONE,TERMatat,Null,"(""america"" AND NOT ""washington"") OR (""washington"" AND NOT ""america"")",grouped,0,0.241,2.91,7.91
+2025-11-03T07:38:42.931987,self,WORDCOUNT,DB2,NONE,TERMatat,Null,"(america OR washington) AND NOT ""congress""",grouped,0,0.293,2.45,6.46
+2025-11-03T07:38:42.932342,self,WORDCOUNT,DB2,NONE,TERMatat,Null,"((""america"" AND ""washington"") OR ""president"") AND NOT ""congress""",nested,0,0.228,2.52,7.12
+2025-11-03T07:38:42.932683,self,WORDCOUNT,DB2,NONE,TERMatat,Null,"((""america"" OR ""washington"") AND (""congress"" OR ""president""))",nested,0,0.215,2.47,6.54
+2025-11-03T07:38:42.933008,self,WORDCOUNT,DB2,NONE,TERMatat,Null,"(""america"" AND (""washington"" OR ""president""))",nested,0,0.194,2.42,5.96
+2025-11-03T07:38:42.933357,self,WORDCOUNT,DB2,NONE,TERMatat,Null,"(""america"" AND (""washington"" AND (""congress"" OR ""president"")))",nested,0,0.218,3.26,7.38
+2025-11-03T07:38:42.933610,self,WORDCOUNT,DB2,NONE,TERMatat,Null,america washington,edge,0,0.129,2.23,4.9
+2025-11-03T07:38:42.933890,self,WORDCOUNT,DB2,NONE,TERMatat,Null,"""united states of america"" OR america",edge,0,0.159,2.34,5.5
+2025-11-03T07:38:42.934183,self,WORDCOUNT,DB2,NONE,TERMatat,Null,"""washington"" AND NOT ""washington""",edge,0,0.165,2.88,6.23
+2025-11-03T07:38:42.934440,self,WORDCOUNT,DB2,NONE,TERMatat,Null,(america),edge,0,0.128,2.25,4.67
+2025-11-03T07:38:42.934735,self,WORDCOUNT,DB2,NONE,TERMatat,Null,"NOT (""america"" AND ""washington"")",edge,0,0.166,2.44,5.61
+2025-11-02T16:54:25.096366,self,BOOLEAN,CUSTOM,CODE,TERMatat,Null,america,term,0,13979.135
+2025-11-02T16:54:26.083273,self,BOOLEAN,CUSTOM,CODE,TERMatat,Null,washington,term,0,986.312
+2025-11-02T16:54:27.042240,self,BOOLEAN,CUSTOM,CODE,TERMatat,Null,constitution,term,0,958.6
+2025-11-02T16:54:30.078021,self,BOOLEAN,CUSTOM,CODE,TERMatat,Null,america AND washington,boolean,0,3035.371
+2025-11-02T16:54:33.344997,self,BOOLEAN,CUSTOM,CODE,TERMatat,Null,america OR washington,boolean,0,3265.583
+2025-11-02T16:54:37.527839,self,BOOLEAN,CUSTOM,CODE,TERMatat,Null,america AND NOT washington,boolean,0,4182.41
+2025-11-02T16:54:39.555077,self,BOOLEAN,CUSTOM,CODE,TERMatat,Null,NOT america,boolean,0,2026.84
+2025-11-02T16:54:40.524706,self,BOOLEAN,CUSTOM,CODE,TERMatat,Null,"""united states of america""",phrase,0,969.314
+2025-11-02T16:54:41.512054,self,BOOLEAN,CUSTOM,CODE,TERMatat,Null,"""american constitution""",phrase,0,987.011
+2025-11-02T16:54:42.486082,self,BOOLEAN,CUSTOM,CODE,TERMatat,Null,"""american independence""",phrase,0,973.74
+2025-11-02T16:54:45.430802,self,BOOLEAN,CUSTOM,CODE,TERMatat,Null,"""united states of america"" AND ""american constitution""",mixed,0,2944.368
+2025-11-02T16:54:48.398161,self,BOOLEAN,CUSTOM,CODE,TERMatat,Null,"""american independence"" OR america",mixed,0,2966.887
+2025-11-02T16:54:52.308646,self,BOOLEAN,CUSTOM,CODE,TERMatat,Null,"""united states of america"" AND NOT constitution",mixed,0,3910.093
+2025-11-02T16:54:55.279233,self,BOOLEAN,CUSTOM,CODE,TERMatat,Null,"""north america"" OR ""south america""",mixed,0,2970.122
+2025-11-02T16:55:02.217466,self,BOOLEAN,CUSTOM,CODE,TERMatat,Null,"(""america"" AND ""washington"") OR (""congress"" AND ""president"")",grouped,0,6936.789
+2025-11-02T16:55:09.097662,self,BOOLEAN,CUSTOM,CODE,TERMatat,Null,"(""america"" OR ""washington"") AND (""congress"" OR ""president"")",grouped,0,6879.606
+2025-11-02T16:55:18.084076,self,BOOLEAN,CUSTOM,CODE,TERMatat,Null,"(""america"" AND NOT ""washington"") OR (""washington"" AND NOT ""america"")",grouped,0,8985.822
+2025-11-02T16:55:24.493226,self,BOOLEAN,CUSTOM,CODE,TERMatat,Null,"(america OR washington) AND NOT ""congress""",grouped,0,6407.629
+2025-11-02T16:55:32.797046,self,BOOLEAN,CUSTOM,CODE,TERMatat,Null,"((""america"" AND ""washington"") OR ""president"") AND NOT ""congress""",nested,0,8303.333
+2025-11-02T16:55:39.053124,self,BOOLEAN,CUSTOM,CODE,TERMatat,Null,"((""america"" OR ""washington"") AND (""congress"" OR ""president""))",nested,0,6255.601
+2025-11-02T16:55:43.422570,self,BOOLEAN,CUSTOM,CODE,TERMatat,Null,"(""america"" AND (""washington"" OR ""president""))",nested,0,4369.044
+2025-11-02T16:55:50.031858,self,BOOLEAN,CUSTOM,CODE,TERMatat,Null,"(""america"" AND (""washington"" AND (""congress"" OR ""president"")))",nested,0,6608.864
+2025-11-02T16:55:51.008442,self,BOOLEAN,CUSTOM,CODE,TERMatat,Null,america washington,edge,0,976.212
+2025-11-02T16:55:54.193955,self,BOOLEAN,CUSTOM,CODE,TERMatat,Null,"""united states of america"" OR america",edge,0,3185.057
+2025-11-02T16:55:57.679724,self,BOOLEAN,CUSTOM,CODE,TERMatat,Null,"""washington"" AND NOT ""washington""",edge,0,3485.375
+2025-11-02T16:55:58.550716,self,BOOLEAN,CUSTOM,CODE,TERMatat,Null,(america),edge,0,870.566
+2025-11-02T16:56:02.114710,self,BOOLEAN,CUSTOM,CODE,TERMatat,Null,"NOT (""america"" AND ""washington"")",edge,0,3563.568
+2025-11-02T16:56:18.083936,self,BOOLEAN,CUSTOM,CLIB,TERMatat,Null,america,term,0,14873.683
+2025-11-02T16:56:18.885772,self,BOOLEAN,CUSTOM,CLIB,TERMatat,Null,washington,term,0,801.445
+2025-11-02T16:56:19.669982,self,BOOLEAN,CUSTOM,CLIB,TERMatat,Null,constitution,term,0,783.828
+2025-11-02T16:56:22.140610,self,BOOLEAN,CUSTOM,CLIB,TERMatat,Null,america AND washington,boolean,0,2470.21
+2025-11-02T16:56:24.535778,self,BOOLEAN,CUSTOM,CLIB,TERMatat,Null,america OR washington,boolean,0,2394.719
+2025-11-02T16:56:27.691829,self,BOOLEAN,CUSTOM,CLIB,TERMatat,Null,america AND NOT washington,boolean,0,3155.584
+2025-11-02T16:56:29.280357,self,BOOLEAN,CUSTOM,CLIB,TERMatat,Null,NOT america,boolean,0,1588.08
+2025-11-02T16:56:30.079054,self,BOOLEAN,CUSTOM,CLIB,TERMatat,Null,"""united states of america""",phrase,0,798.415
+2025-11-02T16:56:30.871808,self,BOOLEAN,CUSTOM,CLIB,TERMatat,Null,"""american constitution""",phrase,0,792.475
+2025-11-02T16:56:31.667713,self,BOOLEAN,CUSTOM,CLIB,TERMatat,Null,"""american independence""",phrase,0,795.618
+2025-11-02T16:56:34.050573,self,BOOLEAN,CUSTOM,CLIB,TERMatat,Null,"""united states of america"" AND ""american constitution""",mixed,0,2382.497
+2025-11-02T16:56:36.399917,self,BOOLEAN,CUSTOM,CLIB,TERMatat,Null,"""american independence"" OR america",mixed,0,2348.918
+2025-11-02T16:56:39.656647,self,BOOLEAN,CUSTOM,CLIB,TERMatat,Null,"""united states of america"" AND NOT constitution",mixed,0,3256.375
+2025-11-02T16:56:42.046218,self,BOOLEAN,CUSTOM,CLIB,TERMatat,Null,"""north america"" OR ""south america""",mixed,0,2389.142
+2025-11-02T16:56:47.557024,self,BOOLEAN,CUSTOM,CLIB,TERMatat,Null,"(""america"" AND ""washington"") OR (""congress"" AND ""president"")",grouped,0,5510.384
+2025-11-02T16:56:53.169567,self,BOOLEAN,CUSTOM,CLIB,TERMatat,Null,"(""america"" OR ""washington"") AND (""congress"" OR ""president"")",grouped,0,5612.113
+2025-11-02T16:57:00.307772,self,BOOLEAN,CUSTOM,CLIB,TERMatat,Null,"(""america"" AND NOT ""washington"") OR (""washington"" AND NOT ""america"")",grouped,0,7137.703
+2025-11-02T16:57:05.036788,self,BOOLEAN,CUSTOM,CLIB,TERMatat,Null,"(america OR washington) AND NOT ""congress""",grouped,0,4728.54
+2025-11-02T16:57:11.769668,self,BOOLEAN,CUSTOM,CLIB,TERMatat,Null,"((""america"" AND ""washington"") OR ""president"") AND NOT ""congress""",nested,0,6732.426
+2025-11-02T16:57:18.261585,self,BOOLEAN,CUSTOM,CLIB,TERMatat,Null,"((""america"" OR ""washington"") AND (""congress"" OR ""president""))",nested,0,6491.474
+2025-11-02T16:57:22.720178,self,BOOLEAN,CUSTOM,CLIB,TERMatat,Null,"(""america"" AND (""washington"" OR ""president""))",nested,0,4458.156
+2025-11-02T16:57:29.116693,self,BOOLEAN,CUSTOM,CLIB,TERMatat,Null,"(""america"" AND (""washington"" AND (""congress"" OR ""president"")))",nested,0,6395.983
+2025-11-02T16:57:29.999597,self,BOOLEAN,CUSTOM,CLIB,TERMatat,Null,america washington,edge,0,882.467
+2025-11-02T16:57:33.183243,self,BOOLEAN,CUSTOM,CLIB,TERMatat,Null,"""united states of america"" OR america",edge,0,3183.25
+2025-11-02T16:57:36.797729,self,BOOLEAN,CUSTOM,CLIB,TERMatat,Null,"""washington"" AND NOT ""washington""",edge,0,3614.13
+2025-11-02T16:57:37.604119,self,BOOLEAN,CUSTOM,CLIB,TERMatat,Null,(america),edge,0,805.886
+2025-11-02T16:57:40.810084,self,BOOLEAN,CUSTOM,CLIB,TERMatat,Null,"NOT (""america"" AND ""washington"")",edge,0,3205.535
+2025-11-02T16:58:03.115514,self,TFIDF,CUSTOM,CODE,TERMatat,Null,america,term,0,21132.5
+2025-11-02T16:58:04.042671,self,TFIDF,CUSTOM,CODE,TERMatat,Null,washington,term,0,926.689
+2025-11-02T16:58:04.936017,self,TFIDF,CUSTOM,CODE,TERMatat,Null,constitution,term,0,892.952
+2025-11-02T16:58:07.639148,self,TFIDF,CUSTOM,CODE,TERMatat,Null,america AND washington,boolean,0,2702.674
+2025-11-02T16:58:10.652338,self,TFIDF,CUSTOM,CODE,TERMatat,Null,america OR washington,boolean,0,3012.751
+2025-11-02T16:58:14.597999,self,TFIDF,CUSTOM,CODE,TERMatat,Null,america AND NOT washington,boolean,0,3945.239
+2025-11-02T16:58:19.616337,self,TFIDF,CUSTOM,CODE,TERMatat,Null,NOT america,boolean,0,5018.007
+2025-11-02T16:58:20.530451,self,TFIDF,CUSTOM,CODE,TERMatat,Null,"""united states of america""",phrase,0,913.808
+2025-11-02T16:58:21.411110,self,TFIDF,CUSTOM,CODE,TERMatat,Null,"""american constitution""",phrase,0,880.321
+2025-11-02T16:58:22.386132,self,TFIDF,CUSTOM,CODE,TERMatat,Null,"""american independence""",phrase,0,974.735
+2025-11-02T16:58:25.046016,self,TFIDF,CUSTOM,CODE,TERMatat,Null,"""united states of america"" AND ""american constitution""",mixed,0,2659.556
+2025-11-02T16:58:27.746333,self,TFIDF,CUSTOM,CODE,TERMatat,Null,"""american independence"" OR america",mixed,0,2699.873
+2025-11-02T16:58:31.309070,self,TFIDF,CUSTOM,CODE,TERMatat,Null,"""united states of america"" AND NOT constitution",mixed,0,3562.4
+2025-11-02T16:58:33.939143,self,TFIDF,CUSTOM,CODE,TERMatat,Null,"""north america"" OR ""south america""",mixed,0,2629.765
+2025-11-02T16:58:40.254463,self,TFIDF,CUSTOM,CODE,TERMatat,Null,"(""america"" AND ""washington"") OR (""congress"" AND ""president"")",grouped,0,6314.841
+2025-11-02T16:58:46.809685,self,TFIDF,CUSTOM,CODE,TERMatat,Null,"(""america"" OR ""washington"") AND (""congress"" OR ""president"")",grouped,0,6554.728
+2025-11-02T16:58:55.144622,self,TFIDF,CUSTOM,CODE,TERMatat,Null,"(""america"" AND NOT ""washington"") OR (""washington"" AND NOT ""america"")",grouped,0,8334.44
+2025-11-02T16:59:00.672155,self,TFIDF,CUSTOM,CODE,TERMatat,Null,"(america OR washington) AND NOT ""congress""",grouped,0,5527.032
+2025-11-02T16:59:07.733189,self,TFIDF,CUSTOM,CODE,TERMatat,Null,"((""america"" AND ""washington"") OR ""president"") AND NOT ""congress""",nested,0,7060.528
+2025-11-02T16:59:13.863977,self,TFIDF,CUSTOM,CODE,TERMatat,Null,"((""america"" OR ""washington"") AND (""congress"" OR ""president""))",nested,0,6130.311
+2025-11-02T16:59:18.368484,self,TFIDF,CUSTOM,CODE,TERMatat,Null,"(""america"" AND (""washington"" OR ""president""))",nested,0,4504.086
+2025-11-02T16:59:24.486441,self,TFIDF,CUSTOM,CODE,TERMatat,Null,"(""america"" AND (""washington"" AND (""congress"" OR ""president"")))",nested,0,6117.434
+2025-11-02T16:59:25.363568,self,TFIDF,CUSTOM,CODE,TERMatat,Null,america washington,edge,0,876.712
+2025-11-02T16:59:28.068470,self,TFIDF,CUSTOM,CODE,TERMatat,Null,"""united states of america"" OR america",edge,0,2704.411
+2025-11-02T16:59:31.577837,self,TFIDF,CUSTOM,CODE,TERMatat,Null,"""washington"" AND NOT ""washington""",edge,0,3509.065
+2025-11-02T16:59:32.542465,self,TFIDF,CUSTOM,CODE,TERMatat,Null,(america),edge,0,964.246
+2025-11-02T16:59:39.052741,self,TFIDF,CUSTOM,CODE,TERMatat,Null,"NOT (""america"" AND ""washington"")",edge,0,6509.8
+2025-11-02T17:00:02.260497,self,TFIDF,CUSTOM,CLIB,TERMatat,Null,america,term,0,21831.335
+2025-11-02T17:00:03.117482,self,TFIDF,CUSTOM,CLIB,TERMatat,Null,washington,term,0,856.585
+2025-11-02T17:00:03.937031,self,TFIDF,CUSTOM,CLIB,TERMatat,Null,constitution,term,0,819.179
+2025-11-02T17:00:06.554757,self,TFIDF,CUSTOM,CLIB,TERMatat,Null,america AND washington,boolean,0,2617.325
+2025-11-02T17:00:09.246330,self,TFIDF,CUSTOM,CLIB,TERMatat,Null,america OR washington,boolean,0,2691.168
+2025-11-02T17:00:13.108156,self,TFIDF,CUSTOM,CLIB,TERMatat,Null,america AND NOT washington,boolean,0,3861.413
+2025-11-02T17:00:17.616728,self,TFIDF,CUSTOM,CLIB,TERMatat,Null,NOT america,boolean,0,4508.233
+2025-11-02T17:00:18.489615,self,TFIDF,CUSTOM,CLIB,TERMatat,Null,"""united states of america""",phrase,0,872.605
+2025-11-02T17:00:19.352315,self,TFIDF,CUSTOM,CLIB,TERMatat,Null,"""american constitution""",phrase,0,862.416
+2025-11-02T17:00:20.251626,self,TFIDF,CUSTOM,CLIB,TERMatat,Null,"""american independence""",phrase,0,899.017
+2025-11-02T17:00:22.935053,self,TFIDF,CUSTOM,CLIB,TERMatat,Null,"""united states of america"" AND ""american constitution""",mixed,0,2683.105
+2025-11-02T17:00:25.685452,self,TFIDF,CUSTOM,CLIB,TERMatat,Null,"""american independence"" OR america",mixed,0,2749.935
+2025-11-02T17:00:29.190879,self,TFIDF,CUSTOM,CLIB,TERMatat,Null,"""united states of america"" AND NOT constitution",mixed,0,3505.1
+2025-11-02T17:00:31.842769,self,TFIDF,CUSTOM,CLIB,TERMatat,Null,"""north america"" OR ""south america""",mixed,0,2651.58
+2025-11-02T17:00:38.087943,self,TFIDF,CUSTOM,CLIB,TERMatat,Null,"(""america"" AND ""washington"") OR (""congress"" AND ""president"")",grouped,0,6244.656
+2025-11-02T17:00:44.424239,self,TFIDF,CUSTOM,CLIB,TERMatat,Null,"(""america"" OR ""washington"") AND (""congress"" OR ""president"")",grouped,0,6335.812
+2025-11-02T17:00:52.158757,self,TFIDF,CUSTOM,CLIB,TERMatat,Null,"(""america"" AND NOT ""washington"") OR (""washington"" AND NOT ""america"")",grouped,0,7733.997
+2025-11-02T17:00:57.431493,self,TFIDF,CUSTOM,CLIB,TERMatat,Null,"(america OR washington) AND NOT ""congress""",grouped,0,5272.254
+2025-11-02T17:01:03.900491,self,TFIDF,CUSTOM,CLIB,TERMatat,Null,"((""america"" AND ""washington"") OR ""president"") AND NOT ""congress""",nested,0,6468.499
+2025-11-02T17:01:09.863039,self,TFIDF,CUSTOM,CLIB,TERMatat,Null,"((""america"" OR ""washington"") AND (""congress"" OR ""president""))",nested,0,5962.078
+2025-11-02T17:01:14.850854,self,TFIDF,CUSTOM,CLIB,TERMatat,Null,"(""america"" AND (""washington"" OR ""president""))",nested,0,4987.335
+2025-11-02T17:01:22.061531,self,TFIDF,CUSTOM,CLIB,TERMatat,Null,"(""america"" AND (""washington"" AND (""congress"" OR ""president"")))",nested,0,7209.865
+2025-11-02T17:01:23.016847,self,TFIDF,CUSTOM,CLIB,TERMatat,Null,america washington,edge,0,954.883
+2025-11-02T17:01:26.110965,self,TFIDF,CUSTOM,CLIB,TERMatat,Null,"""united states of america"" OR america",edge,0,3093.66
+2025-11-02T17:01:29.746365,self,TFIDF,CUSTOM,CLIB,TERMatat,Null,"""washington"" AND NOT ""washington""",edge,0,3635.064
+2025-11-02T17:01:30.645052,self,TFIDF,CUSTOM,CLIB,TERMatat,Null,(america),edge,0,898.204
+2025-11-02T17:01:36.663759,self,TFIDF,CUSTOM,CLIB,TERMatat,Null,"NOT (""america"" AND ""washington"")",edge,0,6018.202
+2025-11-02T17:01:51.386707,self,WORDCOUNT,CUSTOM,CODE,TERMatat,Null,america,term,0,13234.775
+2025-11-02T17:01:52.287672,self,WORDCOUNT,CUSTOM,CODE,TERMatat,Null,washington,term,0,900.513
+2025-11-02T17:01:53.131796,self,WORDCOUNT,CUSTOM,CODE,TERMatat,Null,constitution,term,0,843.74
+2025-11-02T17:01:55.765034,self,WORDCOUNT,CUSTOM,CODE,TERMatat,Null,america AND washington,boolean,0,2632.794
+2025-11-02T17:01:58.728332,self,WORDCOUNT,CUSTOM,CODE,TERMatat,Null,america OR washington,boolean,0,2962.851
+2025-11-02T17:02:02.350607,self,WORDCOUNT,CUSTOM,CODE,TERMatat,Null,america AND NOT washington,boolean,0,3621.819
+2025-11-02T17:02:06.827317,self,WORDCOUNT,CUSTOM,CODE,TERMatat,Null,NOT america,boolean,0,4476.371
+2025-11-02T17:02:07.681383,self,WORDCOUNT,CUSTOM,CODE,TERMatat,Null,"""united states of america""",phrase,0,853.77
+2025-11-02T17:02:08.536868,self,WORDCOUNT,CUSTOM,CODE,TERMatat,Null,"""american constitution""",phrase,0,855.189
+2025-11-02T17:02:09.410853,self,WORDCOUNT,CUSTOM,CODE,TERMatat,Null,"""american independence""",phrase,0,873.68
+2025-11-02T17:02:12.001160,self,WORDCOUNT,CUSTOM,CODE,TERMatat,Null,"""united states of america"" AND ""american constitution""",mixed,0,2589.983
+2025-11-02T17:02:14.803745,self,WORDCOUNT,CUSTOM,CODE,TERMatat,Null,"""american independence"" OR america",mixed,0,2802.138
+2025-11-02T17:02:18.263659,self,WORDCOUNT,CUSTOM,CODE,TERMatat,Null,"""united states of america"" AND NOT constitution",mixed,0,3459.589
+2025-11-02T17:02:20.883367,self,WORDCOUNT,CUSTOM,CODE,TERMatat,Null,"""north america"" OR ""south america""",mixed,0,2619.365
+2025-11-02T17:02:27.609971,self,WORDCOUNT,CUSTOM,CODE,TERMatat,Null,"(""america"" AND ""washington"") OR (""congress"" AND ""president"")",grouped,0,6726.043
+2025-11-02T17:02:35.136079,self,WORDCOUNT,CUSTOM,CODE,TERMatat,Null,"(""america"" OR ""washington"") AND (""congress"" OR ""president"")",grouped,0,7525.436
+2025-11-02T17:02:44.938097,self,WORDCOUNT,CUSTOM,CODE,TERMatat,Null,"(""america"" AND NOT ""washington"") OR (""washington"" AND NOT ""america"")",grouped,0,9801.482
+2025-11-02T17:02:51.012481,self,WORDCOUNT,CUSTOM,CODE,TERMatat,Null,"(america OR washington) AND NOT ""congress""",grouped,0,6073.885
+2025-11-02T17:02:58.732004,self,WORDCOUNT,CUSTOM,CODE,TERMatat,Null,"((""america"" AND ""washington"") OR ""president"") AND NOT ""congress""",nested,0,7718.994
+2025-11-02T17:03:06.365251,self,WORDCOUNT,CUSTOM,CODE,TERMatat,Null,"((""america"" OR ""washington"") AND (""congress"" OR ""president""))",nested,0,7632.691
+2025-11-02T17:03:11.519655,self,WORDCOUNT,CUSTOM,CODE,TERMatat,Null,"(""america"" AND (""washington"" OR ""president""))",nested,0,5153.841
+2025-11-02T17:03:18.289649,self,WORDCOUNT,CUSTOM,CODE,TERMatat,Null,"(""america"" AND (""washington"" AND (""congress"" OR ""president"")))",nested,0,6769.445
+2025-11-02T17:03:19.296185,self,WORDCOUNT,CUSTOM,CODE,TERMatat,Null,america washington,edge,0,1006.09
+2025-11-02T17:03:22.279475,self,WORDCOUNT,CUSTOM,CODE,TERMatat,Null,"""united states of america"" OR america",edge,0,2982.849
+2025-11-02T17:03:26.109977,self,WORDCOUNT,CUSTOM,CODE,TERMatat,Null,"""washington"" AND NOT ""washington""",edge,0,3830.147
+2025-11-02T17:03:27.153567,self,WORDCOUNT,CUSTOM,CODE,TERMatat,Null,(america),edge,0,1043.154
+2025-11-02T17:03:34.115045,self,WORDCOUNT,CUSTOM,CODE,TERMatat,Null,"NOT (""america"" AND ""washington"")",edge,0,6960.987
+2025-11-02T17:03:50.857255,self,WORDCOUNT,CUSTOM,CLIB,TERMatat,Null,america,term,0,15443.61
+2025-11-02T17:03:51.775921,self,WORDCOUNT,CUSTOM,CLIB,TERMatat,Null,washington,term,0,918.174
+2025-11-02T17:03:52.660201,self,WORDCOUNT,CUSTOM,CLIB,TERMatat,Null,constitution,term,0,883.877
+2025-11-02T17:03:55.350857,self,WORDCOUNT,CUSTOM,CLIB,TERMatat,Null,america AND washington,boolean,0,2690.192
+2025-11-02T17:03:58.211337,self,WORDCOUNT,CUSTOM,CLIB,TERMatat,Null,america OR washington,boolean,0,2860.035
+2025-11-02T17:04:01.992867,self,WORDCOUNT,CUSTOM,CLIB,TERMatat,Null,america AND NOT washington,boolean,0,3781.065
+2025-11-02T17:04:06.737488,self,WORDCOUNT,CUSTOM,CLIB,TERMatat,Null,NOT america,boolean,0,4744.285
+2025-11-02T17:04:07.609255,self,WORDCOUNT,CUSTOM,CLIB,TERMatat,Null,"""united states of america""",phrase,0,871.463
+2025-11-02T17:04:08.498764,self,WORDCOUNT,CUSTOM,CLIB,TERMatat,Null,"""american constitution""",phrase,0,889.204
+2025-11-02T17:04:09.390655,self,WORDCOUNT,CUSTOM,CLIB,TERMatat,Null,"""american independence""",phrase,0,891.595
+2025-11-02T17:04:12.073117,self,WORDCOUNT,CUSTOM,CLIB,TERMatat,Null,"""united states of america"" AND ""american constitution""",mixed,0,2682.248
+2025-11-02T17:04:14.889028,self,WORDCOUNT,CUSTOM,CLIB,TERMatat,Null,"""american independence"" OR america",mixed,0,2815.644
+2025-11-02T17:04:18.395582,self,WORDCOUNT,CUSTOM,CLIB,TERMatat,Null,"""united states of america"" AND NOT constitution",mixed,0,3506.419
+2025-11-02T17:04:21.145481,self,WORDCOUNT,CUSTOM,CLIB,TERMatat,Null,"""north america"" OR ""south america""",mixed,0,2749.718
+2025-11-02T17:04:27.356187,self,WORDCOUNT,CUSTOM,CLIB,TERMatat,Null,"(""america"" AND ""washington"") OR (""congress"" AND ""president"")",grouped,0,6210.435
+2025-11-02T17:04:33.566771,self,WORDCOUNT,CUSTOM,CLIB,TERMatat,Null,"(""america"" OR ""washington"") AND (""congress"" OR ""president"")",grouped,0,6210.238
+2025-11-02T17:04:42.079643,self,WORDCOUNT,CUSTOM,CLIB,TERMatat,Null,"(""america"" AND NOT ""washington"") OR (""washington"" AND NOT ""america"")",grouped,0,8512.494
+2025-11-02T17:04:47.693392,self,WORDCOUNT,CUSTOM,CLIB,TERMatat,Null,"(america OR washington) AND NOT ""congress""",grouped,0,5613.31
+2025-11-02T17:04:54.831431,self,WORDCOUNT,CUSTOM,CLIB,TERMatat,Null,"((""america"" AND ""washington"") OR ""president"") AND NOT ""congress""",nested,0,7137.588
+2025-11-02T17:05:01.057706,self,WORDCOUNT,CUSTOM,CLIB,TERMatat,Null,"((""america"" OR ""washington"") AND (""congress"" OR ""president""))",nested,0,6225.826
+2025-11-02T17:05:05.545292,self,WORDCOUNT,CUSTOM,CLIB,TERMatat,Null,"(""america"" AND (""washington"" OR ""president""))",nested,0,4487.144
+2025-11-02T17:05:11.793999,self,WORDCOUNT,CUSTOM,CLIB,TERMatat,Null,"(""america"" AND (""washington"" AND (""congress"" OR ""president"")))",nested,0,6248.237
+2025-11-02T17:05:12.694726,self,WORDCOUNT,CUSTOM,CLIB,TERMatat,Null,america washington,edge,0,900.32
+2025-11-02T17:05:15.595826,self,WORDCOUNT,CUSTOM,CLIB,TERMatat,Null,"""united states of america"" OR america",edge,0,2900.662
+2025-11-02T17:05:19.126951,self,WORDCOUNT,CUSTOM,CLIB,TERMatat,Null,"""washington"" AND NOT ""washington""",edge,0,3530.787
+2025-11-02T17:05:20.092664,self,WORDCOUNT,CUSTOM,CLIB,TERMatat,Null,(america),edge,0,965.279
+2025-11-02T17:05:26.613576,self,WORDCOUNT,CUSTOM,CLIB,TERMatat,Null,"NOT (""america"" AND ""washington"")",edge,0,6520.437
+2025-11-02T19:02:34.815151,self,BOOLEAN,CUSTOM,NONE,TERMatat,Skipping,america,term,0,39142.059
+2025-11-02T19:02:35.788654,self,BOOLEAN,CUSTOM,NONE,TERMatat,Skipping,washington,term,0,972.107
+2025-11-02T19:02:36.694209,self,BOOLEAN,CUSTOM,NONE,TERMatat,Skipping,constitution,term,0,905.233
+2025-11-02T19:02:40.097753,self,BOOLEAN,CUSTOM,NONE,TERMatat,Skipping,america AND washington,boolean,0,3403.147
+2025-11-02T19:02:43.268842,self,BOOLEAN,CUSTOM,NONE,TERMatat,Skipping,america OR washington,boolean,0,3170.682
+2025-11-02T19:02:47.866292,self,BOOLEAN,CUSTOM,NONE,TERMatat,Skipping,america AND NOT washington,boolean,0,4597.074
+2025-11-02T19:02:50.149531,self,BOOLEAN,CUSTOM,NONE,TERMatat,Skipping,NOT america,boolean,0,2282.829
+2025-11-02T19:02:51.377370,self,BOOLEAN,CUSTOM,NONE,TERMatat,Skipping,"""united states of america""",phrase,0,1227.553
+2025-11-02T19:02:52.395327,self,BOOLEAN,CUSTOM,NONE,TERMatat,Skipping,"""american constitution""",phrase,0,1017.69
+2025-11-02T19:02:53.362155,self,BOOLEAN,CUSTOM,NONE,TERMatat,Skipping,"""american independence""",phrase,0,966.574
+2025-11-02T19:02:56.374617,self,BOOLEAN,CUSTOM,NONE,TERMatat,Skipping,"""united states of america"" AND ""american constitution""",mixed,0,3012.163
+2025-11-02T19:02:59.509181,self,BOOLEAN,CUSTOM,NONE,TERMatat,Skipping,"""american independence"" OR america",mixed,0,3134.199
+2025-11-02T19:03:03.488820,self,BOOLEAN,CUSTOM,NONE,TERMatat,Skipping,"""united states of america"" AND NOT constitution",mixed,0,3979.348
+2025-11-02T19:03:06.673267,self,BOOLEAN,CUSTOM,NONE,TERMatat,Skipping,"""north america"" OR ""south america""",mixed,0,3184.074
+2025-11-02T19:03:12.956433,self,BOOLEAN,CUSTOM,NONE,TERMatat,Skipping,"(""america"" AND ""washington"") OR (""congress"" AND ""president"")",grouped,0,6282.809
+2025-11-02T19:03:19.538702,self,BOOLEAN,CUSTOM,NONE,TERMatat,Skipping,"(""america"" OR ""washington"") AND (""congress"" OR ""president"")",grouped,0,6581.907
+2025-11-02T19:03:28.025336,self,BOOLEAN,CUSTOM,NONE,TERMatat,Skipping,"(""america"" AND NOT ""washington"") OR (""washington"" AND NOT ""america"")",grouped,0,8486.245
+2025-11-02T19:03:33.521431,self,BOOLEAN,CUSTOM,NONE,TERMatat,Skipping,"(america OR washington) AND NOT ""congress""",grouped,0,5495.722
+2025-11-02T19:03:40.555091,self,BOOLEAN,CUSTOM,NONE,TERMatat,Skipping,"((""america"" AND ""washington"") OR ""president"") AND NOT ""congress""",nested,0,7033.297
+2025-11-02T19:03:46.577319,self,BOOLEAN,CUSTOM,NONE,TERMatat,Skipping,"((""america"" OR ""washington"") AND (""congress"" OR ""president""))",nested,0,6021.848
+2025-11-02T19:03:51.108812,self,BOOLEAN,CUSTOM,NONE,TERMatat,Skipping,"(""america"" AND (""washington"" OR ""president""))",nested,0,4531.121
+2025-11-02T19:03:58.428344,self,BOOLEAN,CUSTOM,NONE,TERMatat,Skipping,"(""america"" AND (""washington"" AND (""congress"" OR ""president"")))",nested,0,7319.163
+2025-11-02T19:03:59.472666,self,BOOLEAN,CUSTOM,NONE,TERMatat,Skipping,america washington,edge,0,1043.939
+2025-11-02T19:04:02.420859,self,BOOLEAN,CUSTOM,NONE,TERMatat,Skipping,"""united states of america"" OR america",edge,0,2947.805
+2025-11-02T19:04:06.240318,self,BOOLEAN,CUSTOM,NONE,TERMatat,Skipping,"""washington"" AND NOT ""washington""",edge,0,3819.149
+2025-11-02T19:04:07.175558,self,BOOLEAN,CUSTOM,NONE,TERMatat,Skipping,(america),edge,0,934.833
+2025-11-02T19:04:11.355111,self,BOOLEAN,CUSTOM,NONE,TERMatat,Skipping,"NOT (""america"" AND ""washington"")",edge,0,4179.155
+2025-11-02T19:05:06.799482,self,TFIDF,CUSTOM,NONE,TERMatat,Skipping,america,term,0,53499.197
+2025-11-02T19:05:07.840839,self,TFIDF,CUSTOM,NONE,TERMatat,Skipping,washington,term,0,1040.812
+2025-11-02T19:05:08.862384,self,TFIDF,CUSTOM,NONE,TERMatat,Skipping,constitution,term,0,1021.2
+2025-11-02T19:05:11.942962,self,TFIDF,CUSTOM,NONE,TERMatat,Skipping,america AND washington,boolean,0,3080.225
+2025-11-02T19:05:15.153237,self,TFIDF,CUSTOM,NONE,TERMatat,Skipping,america OR washington,boolean,0,3209.936
+2025-11-02T19:05:19.277339,self,TFIDF,CUSTOM,NONE,TERMatat,Skipping,america AND NOT washington,boolean,0,4123.742
+2025-11-02T19:05:24.298255,self,TFIDF,CUSTOM,NONE,TERMatat,Skipping,NOT america,boolean,0,5020.639
+2025-11-02T19:05:25.237839,self,TFIDF,CUSTOM,NONE,TERMatat,Skipping,"""united states of america""",phrase,0,939.307
+2025-11-02T19:05:26.185625,self,TFIDF,CUSTOM,NONE,TERMatat,Skipping,"""american constitution""",phrase,0,947.522
+2025-11-02T19:05:27.144355,self,TFIDF,CUSTOM,NONE,TERMatat,Skipping,"""american independence""",phrase,0,958.457
+2025-11-02T19:05:29.976222,self,TFIDF,CUSTOM,NONE,TERMatat,Skipping,"""united states of america"" AND ""american constitution""",mixed,0,2831.617
+2025-11-02T19:05:32.983522,self,TFIDF,CUSTOM,NONE,TERMatat,Skipping,"""american independence"" OR america",mixed,0,3006.958
+2025-11-02T19:05:36.812252,self,TFIDF,CUSTOM,NONE,TERMatat,Skipping,"""united states of america"" AND NOT constitution",mixed,0,3828.471
+2025-11-02T19:05:39.864447,self,TFIDF,CUSTOM,NONE,TERMatat,Skipping,"""north america"" OR ""south america""",mixed,0,3051.915
+2025-11-02T19:05:46.719678,self,TFIDF,CUSTOM,NONE,TERMatat,Skipping,"(""america"" AND ""washington"") OR (""congress"" AND ""president"")",grouped,0,6854.876
+2025-11-02T19:05:53.740851,self,TFIDF,CUSTOM,NONE,TERMatat,Skipping,"(""america"" OR ""washington"") AND (""congress"" OR ""president"")",grouped,0,7020.829
+2025-11-02T19:06:03.219823,self,TFIDF,CUSTOM,NONE,TERMatat,Skipping,"(""america"" AND NOT ""washington"") OR (""washington"" AND NOT ""america"")",grouped,0,9478.581
+2025-11-02T19:06:09.416369,self,TFIDF,CUSTOM,NONE,TERMatat,Skipping,"(america OR washington) AND NOT ""congress""",grouped,0,6196.134
+2025-11-02T19:06:17.264786,self,TFIDF,CUSTOM,NONE,TERMatat,Skipping,"((""america"" AND ""washington"") OR ""president"") AND NOT ""congress""",nested,0,7848.077
+2025-11-02T19:06:24.163794,self,TFIDF,CUSTOM,NONE,TERMatat,Skipping,"((""america"" OR ""washington"") AND (""congress"" OR ""president""))",nested,0,6898.616
+2025-11-02T19:06:29.063242,self,TFIDF,CUSTOM,NONE,TERMatat,Skipping,"(""america"" AND (""washington"" OR ""president""))",nested,0,4899.066
+2025-11-02T19:06:35.928657,self,TFIDF,CUSTOM,NONE,TERMatat,Skipping,"(""america"" AND (""washington"" AND (""congress"" OR ""president"")))",nested,0,6865.061
+2025-11-02T19:06:36.917473,self,TFIDF,CUSTOM,NONE,TERMatat,Skipping,america washington,edge,0,988.468
+2025-11-02T19:06:39.931360,self,TFIDF,CUSTOM,NONE,TERMatat,Skipping,"""united states of america"" OR america",edge,0,3013.526
+2025-11-02T19:06:43.796823,self,TFIDF,CUSTOM,NONE,TERMatat,Skipping,"""washington"" AND NOT ""washington""",edge,0,3865.198
+2025-11-02T19:06:44.841247,self,TFIDF,CUSTOM,NONE,TERMatat,Skipping,(america),edge,0,1044.074
+2025-11-02T19:06:51.936552,self,TFIDF,CUSTOM,NONE,TERMatat,Skipping,"NOT (""america"" AND ""washington"")",edge,0,7094.932
+2025-11-02T19:07:33.388927,self,WORDCOUNT,CUSTOM,NONE,TERMatat,Skipping,america,term,0,39440.118
+2025-11-02T19:07:34.331955,self,WORDCOUNT,CUSTOM,NONE,TERMatat,Skipping,washington,term,0,942.531
+2025-11-02T19:07:35.240530,self,WORDCOUNT,CUSTOM,NONE,TERMatat,Skipping,constitution,term,0,908.14
+2025-11-02T19:07:37.920073,self,WORDCOUNT,CUSTOM,NONE,TERMatat,Skipping,america AND washington,boolean,0,2678.888
+2025-11-02T19:07:40.998247,self,WORDCOUNT,CUSTOM,NONE,TERMatat,Skipping,america OR washington,boolean,0,3077.516
+2025-11-02T19:07:44.770288,self,WORDCOUNT,CUSTOM,NONE,TERMatat,Skipping,america AND NOT washington,boolean,0,3771.37
+2025-11-02T19:07:49.663068,self,WORDCOUNT,CUSTOM,NONE,TERMatat,Skipping,NOT america,boolean,0,4892.225
+2025-11-02T19:07:50.610317,self,WORDCOUNT,CUSTOM,NONE,TERMatat,Skipping,"""united states of america""",phrase,0,946.929
+2025-11-02T19:07:51.572987,self,WORDCOUNT,CUSTOM,NONE,TERMatat,Skipping,"""american constitution""",phrase,0,962.365
+2025-11-02T19:07:52.537359,self,WORDCOUNT,CUSTOM,NONE,TERMatat,Skipping,"""american independence""",phrase,0,964.061
+2025-11-02T19:07:55.480167,self,WORDCOUNT,CUSTOM,NONE,TERMatat,Skipping,"""united states of america"" AND ""american constitution""",mixed,0,2942.424
+2025-11-02T19:07:58.466826,self,WORDCOUNT,CUSTOM,NONE,TERMatat,Skipping,"""american independence"" OR america",mixed,0,2986.186
+2025-11-02T19:08:02.311586,self,WORDCOUNT,CUSTOM,NONE,TERMatat,Skipping,"""united states of america"" AND NOT constitution",mixed,0,3844.348
+2025-11-02T19:08:05.366987,self,WORDCOUNT,CUSTOM,NONE,TERMatat,Skipping,"""north america"" OR ""south america""",mixed,0,3055.019
+2025-11-02T19:08:12.112455,self,WORDCOUNT,CUSTOM,NONE,TERMatat,Skipping,"(""america"" AND ""washington"") OR (""congress"" AND ""president"")",grouped,0,6744.974
+2025-11-02T19:08:18.848507,self,WORDCOUNT,CUSTOM,NONE,TERMatat,Skipping,"(""america"" OR ""washington"") AND (""congress"" OR ""president"")",grouped,0,6735.573
+2025-11-02T19:08:28.084308,self,WORDCOUNT,CUSTOM,NONE,TERMatat,Skipping,"(""america"" AND NOT ""washington"") OR (""washington"" AND NOT ""america"")",grouped,0,9235.336
+2025-11-02T19:08:34.186951,self,WORDCOUNT,CUSTOM,NONE,TERMatat,Skipping,"(america OR washington) AND NOT ""congress""",grouped,0,6102.212
+2025-11-02T19:08:41.894174,self,WORDCOUNT,CUSTOM,NONE,TERMatat,Skipping,"((""america"" AND ""washington"") OR ""president"") AND NOT ""congress""",nested,0,7706.802
+2025-11-02T19:08:48.692673,self,WORDCOUNT,CUSTOM,NONE,TERMatat,Skipping,"((""america"" OR ""washington"") AND (""congress"" OR ""president""))",nested,0,6798.083
+2025-11-02T19:08:53.541302,self,WORDCOUNT,CUSTOM,NONE,TERMatat,Skipping,"(""america"" AND (""washington"" OR ""president""))",nested,0,4848.221
+2025-11-02T19:09:00.359449,self,WORDCOUNT,CUSTOM,NONE,TERMatat,Skipping,"(""america"" AND (""washington"" AND (""congress"" OR ""president"")))",nested,0,6817.731
+2025-11-02T19:09:01.335533,self,WORDCOUNT,CUSTOM,NONE,TERMatat,Skipping,america washington,edge,0,975.701
+2025-11-02T19:09:04.315857,self,WORDCOUNT,CUSTOM,NONE,TERMatat,Skipping,"""united states of america"" OR america",edge,0,2979.93
+2025-11-02T19:09:08.147085,self,WORDCOUNT,CUSTOM,NONE,TERMatat,Skipping,"""washington"" AND NOT ""washington""",edge,0,3830.947
+2025-11-02T19:09:09.179996,self,WORDCOUNT,CUSTOM,NONE,TERMatat,Skipping,(america),edge,0,1032.512
+2025-11-02T19:09:16.201636,self,WORDCOUNT,CUSTOM,NONE,TERMatat,Skipping,"NOT (""america"" AND ""washington"")",edge,0,7021.201
+2025-11-02T19:09:31.119943,self,BOOLEAN,CUSTOM,CODE,TERMatat,Skipping,america,term,0,13367.998
+2025-11-02T19:09:32.090403,self,BOOLEAN,CUSTOM,CODE,TERMatat,Skipping,washington,term,0,970.048
+2025-11-02T19:09:33.037841,self,BOOLEAN,CUSTOM,CODE,TERMatat,Skipping,constitution,term,0,947.119
+2025-11-02T19:09:35.906593,self,BOOLEAN,CUSTOM,CODE,TERMatat,Skipping,america AND washington,boolean,0,2868.36
+2025-11-02T19:09:38.784042,self,BOOLEAN,CUSTOM,CODE,TERMatat,Skipping,america OR washington,boolean,0,2877.042
+2025-11-02T19:09:42.630641,self,BOOLEAN,CUSTOM,CODE,TERMatat,Skipping,america AND NOT washington,boolean,0,3846.183
+2025-11-02T19:09:44.558182,self,BOOLEAN,CUSTOM,CODE,TERMatat,Skipping,NOT america,boolean,0,1927.135
+2025-11-02T19:09:45.510470,self,BOOLEAN,CUSTOM,CODE,TERMatat,Skipping,"""united states of america""",phrase,0,952.012
+2025-11-02T19:09:46.472564,self,BOOLEAN,CUSTOM,CODE,TERMatat,Skipping,"""american constitution""",phrase,0,961.82
+2025-11-02T19:09:47.476778,self,BOOLEAN,CUSTOM,CODE,TERMatat,Skipping,"""american independence""",phrase,0,1003.949
+2025-11-02T19:09:50.335975,self,BOOLEAN,CUSTOM,CODE,TERMatat,Skipping,"""united states of america"" AND ""american constitution""",mixed,0,2858.884
+2025-11-02T19:09:53.198085,self,BOOLEAN,CUSTOM,CODE,TERMatat,Skipping,"""american independence"" OR america",mixed,0,2861.721
+2025-11-02T19:09:57.109901,self,BOOLEAN,CUSTOM,CODE,TERMatat,Skipping,"""united states of america"" AND NOT constitution",mixed,0,3911.508
+2025-11-02T19:10:00.203138,self,BOOLEAN,CUSTOM,CODE,TERMatat,Skipping,"""north america"" OR ""south america""",mixed,0,3092.827
+2025-11-02T19:10:07.055669,self,BOOLEAN,CUSTOM,CODE,TERMatat,Skipping,"(""america"" AND ""washington"") OR (""congress"" AND ""president"")",grouped,0,6852.141
+2025-11-02T19:10:14.255762,self,BOOLEAN,CUSTOM,CODE,TERMatat,Skipping,"(""america"" OR ""washington"") AND (""congress"" OR ""president"")",grouped,0,7199.682
+2025-11-02T19:10:23.634476,self,BOOLEAN,CUSTOM,CODE,TERMatat,Skipping,"(""america"" AND NOT ""washington"") OR (""washington"" AND NOT ""america"")",grouped,0,9378.255
+2025-11-02T19:10:29.568490,self,BOOLEAN,CUSTOM,CODE,TERMatat,Skipping,"(america OR washington) AND NOT ""congress""",grouped,0,5933.521
+2025-11-02T19:10:37.519743,self,BOOLEAN,CUSTOM,CODE,TERMatat,Skipping,"((""america"" AND ""washington"") OR ""president"") AND NOT ""congress""",nested,0,7950.831
+2025-11-02T19:10:44.476207,self,BOOLEAN,CUSTOM,CODE,TERMatat,Skipping,"((""america"" OR ""washington"") AND (""congress"" OR ""president""))",nested,0,6956.034
+2025-11-02T19:10:49.457409,self,BOOLEAN,CUSTOM,CODE,TERMatat,Skipping,"(""america"" AND (""washington"" OR ""president""))",nested,0,4980.798
+2025-11-02T19:10:56.263732,self,BOOLEAN,CUSTOM,CODE,TERMatat,Skipping,"(""america"" AND (""washington"" AND (""congress"" OR ""president"")))",nested,0,6805.755
+2025-11-02T19:10:57.239012,self,BOOLEAN,CUSTOM,CODE,TERMatat,Skipping,america washington,edge,0,974.897
+2025-11-02T19:11:00.145595,self,BOOLEAN,CUSTOM,CODE,TERMatat,Skipping,"""united states of america"" OR america",edge,0,2906.188
+2025-11-02T19:11:04.227604,self,BOOLEAN,CUSTOM,CODE,TERMatat,Skipping,"""washington"" AND NOT ""washington""",edge,0,4081.682
+2025-11-02T19:11:05.198576,self,BOOLEAN,CUSTOM,CODE,TERMatat,Skipping,(america),edge,0,970.437
+2025-11-02T19:11:09.051468,self,BOOLEAN,CUSTOM,CODE,TERMatat,Skipping,"NOT (""america"" AND ""washington"")",edge,0,3852.476
+2025-11-02T19:11:31.307893,self,TFIDF,CUSTOM,CODE,TERMatat,Skipping,america,term,0,20995.575
+2025-11-02T19:11:32.300338,self,TFIDF,CUSTOM,CODE,TERMatat,Skipping,washington,term,0,991.563
+2025-11-02T19:11:33.272730,self,TFIDF,CUSTOM,CODE,TERMatat,Skipping,constitution,term,0,972.071
+2025-11-02T19:11:36.252817,self,TFIDF,CUSTOM,CODE,TERMatat,Skipping,america AND washington,boolean,0,2979.698
+2025-11-02T19:11:39.441977,self,TFIDF,CUSTOM,CODE,TERMatat,Skipping,america OR washington,boolean,0,3188.756
+2025-11-02T19:11:43.625764,self,TFIDF,CUSTOM,CODE,TERMatat,Skipping,america AND NOT washington,boolean,0,4183.366
+2025-11-02T19:11:48.657623,self,TFIDF,CUSTOM,CODE,TERMatat,Skipping,NOT america,boolean,0,5031.546
+2025-11-02T19:11:49.624870,self,TFIDF,CUSTOM,CODE,TERMatat,Skipping,"""united states of america""",phrase,0,966.943
+2025-11-02T19:11:50.602482,self,TFIDF,CUSTOM,CODE,TERMatat,Skipping,"""american constitution""",phrase,0,977.341
+2025-11-02T19:11:51.549786,self,TFIDF,CUSTOM,CODE,TERMatat,Skipping,"""american independence""",phrase,0,947.042
+2025-11-02T19:11:54.444236,self,TFIDF,CUSTOM,CODE,TERMatat,Skipping,"""united states of america"" AND ""american constitution""",mixed,0,2894.173
+2025-11-02T19:11:57.486365,self,TFIDF,CUSTOM,CODE,TERMatat,Skipping,"""american independence"" OR america",mixed,0,3041.741
+2025-11-02T19:12:01.421308,self,TFIDF,CUSTOM,CODE,TERMatat,Skipping,"""united states of america"" AND NOT constitution",mixed,0,3934.582
+2025-11-02T19:12:04.577922,self,TFIDF,CUSTOM,CODE,TERMatat,Skipping,"""north america"" OR ""south america""",mixed,0,3156.331
+2025-11-02T19:12:11.509437,self,TFIDF,CUSTOM,CODE,TERMatat,Skipping,"(""america"" AND ""washington"") OR (""congress"" AND ""president"")",grouped,0,6931.014
+2025-11-02T19:12:18.407774,self,TFIDF,CUSTOM,CODE,TERMatat,Skipping,"(""america"" OR ""washington"") AND (""congress"" OR ""president"")",grouped,0,6897.895
+2025-11-02T19:12:28.204937,self,TFIDF,CUSTOM,CODE,TERMatat,Skipping,"(""america"" AND NOT ""washington"") OR (""washington"" AND NOT ""america"")",grouped,0,9796.714
+2025-11-02T19:12:34.428203,self,TFIDF,CUSTOM,CODE,TERMatat,Skipping,"(america OR washington) AND NOT ""congress""",grouped,0,6222.791
+2025-11-02T19:12:42.304937,self,TFIDF,CUSTOM,CODE,TERMatat,Skipping,"((""america"" AND ""washington"") OR ""president"") AND NOT ""congress""",nested,0,7876.319
+2025-11-02T19:12:49.210986,self,TFIDF,CUSTOM,CODE,TERMatat,Skipping,"((""america"" OR ""washington"") AND (""congress"" OR ""president""))",nested,0,6905.622
+2025-11-02T19:12:54.249480,self,TFIDF,CUSTOM,CODE,TERMatat,Skipping,"(""america"" AND (""washington"" OR ""president""))",nested,0,5038.001
+2025-11-02T19:13:01.189303,self,TFIDF,CUSTOM,CODE,TERMatat,Skipping,"(""america"" AND (""washington"" AND (""congress"" OR ""president"")))",nested,0,6939.409
+2025-11-02T19:13:02.193023,self,TFIDF,CUSTOM,CODE,TERMatat,Skipping,america washington,edge,0,1003.303
+2025-11-02T19:13:05.236371,self,TFIDF,CUSTOM,CODE,TERMatat,Skipping,"""united states of america"" OR america",edge,0,3042.843
+2025-11-02T19:13:09.105540,self,TFIDF,CUSTOM,CODE,TERMatat,Skipping,"""washington"" AND NOT ""washington""",edge,0,3868.858
+2025-11-02T19:13:10.149983,self,TFIDF,CUSTOM,CODE,TERMatat,Skipping,(america),edge,0,1044.049
+2025-11-02T19:13:17.076138,self,TFIDF,CUSTOM,CODE,TERMatat,Skipping,"NOT (""america"" AND ""washington"")",edge,0,6925.719
+2025-11-02T19:13:32.604404,self,WORDCOUNT,CUSTOM,CODE,TERMatat,Skipping,america,term,0,13970.654
+2025-11-02T19:13:33.608100,self,WORDCOUNT,CUSTOM,CODE,TERMatat,Skipping,washington,term,0,1003.291
+2025-11-02T19:13:34.578204,self,WORDCOUNT,CUSTOM,CODE,TERMatat,Skipping,constitution,term,0,969.781
+2025-11-02T19:13:37.546182,self,WORDCOUNT,CUSTOM,CODE,TERMatat,Skipping,america AND washington,boolean,0,2967.533
+2025-11-02T19:13:40.697443,self,WORDCOUNT,CUSTOM,CODE,TERMatat,Skipping,america OR washington,boolean,0,3150.843
+2025-11-02T19:13:44.807687,self,WORDCOUNT,CUSTOM,CODE,TERMatat,Skipping,america AND NOT washington,boolean,0,4109.827
+2025-11-02T19:13:49.681251,self,WORDCOUNT,CUSTOM,CODE,TERMatat,Skipping,NOT america,boolean,0,4873.261
+2025-11-02T19:13:50.654963,self,WORDCOUNT,CUSTOM,CODE,TERMatat,Skipping,"""united states of america""",phrase,0,973.428
+2025-11-02T19:13:51.642131,self,WORDCOUNT,CUSTOM,CODE,TERMatat,Skipping,"""american constitution""",phrase,0,986.893
+2025-11-02T19:13:52.611426,self,WORDCOUNT,CUSTOM,CODE,TERMatat,Skipping,"""american independence""",phrase,0,969.028
+2025-11-02T19:13:55.577947,self,WORDCOUNT,CUSTOM,CODE,TERMatat,Skipping,"""united states of america"" AND ""american constitution""",mixed,0,2966.232
+2025-11-02T19:13:58.610908,self,WORDCOUNT,CUSTOM,CODE,TERMatat,Skipping,"""american independence"" OR america",mixed,0,3032.563
+2025-11-02T19:14:02.518749,self,WORDCOUNT,CUSTOM,CODE,TERMatat,Skipping,"""united states of america"" AND NOT constitution",mixed,0,3907.555
+2025-11-02T19:14:05.602768,self,WORDCOUNT,CUSTOM,CODE,TERMatat,Skipping,"""north america"" OR ""south america""",mixed,0,3083.734
+2025-11-02T19:14:12.414589,self,WORDCOUNT,CUSTOM,CODE,TERMatat,Skipping,"(""america"" AND ""washington"") OR (""congress"" AND ""president"")",grouped,0,6811.396
+2025-11-02T19:14:19.570494,self,WORDCOUNT,CUSTOM,CODE,TERMatat,Skipping,"(""america"" OR ""washington"") AND (""congress"" OR ""president"")",grouped,0,7155.419
+2025-11-02T19:14:28.787834,self,WORDCOUNT,CUSTOM,CODE,TERMatat,Skipping,"(""america"" AND NOT ""washington"") OR (""washington"" AND NOT ""america"")",grouped,0,9216.896
+2025-11-02T19:14:34.928838,self,WORDCOUNT,CUSTOM,CODE,TERMatat,Skipping,"(america OR washington) AND NOT ""congress""",grouped,0,6140.594
+2025-11-02T19:14:42.826780,self,WORDCOUNT,CUSTOM,CODE,TERMatat,Skipping,"((""america"" AND ""washington"") OR ""president"") AND NOT ""congress""",nested,0,7897.543
+2025-11-02T19:14:49.635857,self,WORDCOUNT,CUSTOM,CODE,TERMatat,Skipping,"((""america"" OR ""washington"") AND (""congress"" OR ""president""))",nested,0,6808.674
+2025-11-02T19:14:54.552714,self,WORDCOUNT,CUSTOM,CODE,TERMatat,Skipping,"(""america"" AND (""washington"" OR ""president""))",nested,0,4916.45
+2025-11-02T19:15:01.304810,self,WORDCOUNT,CUSTOM,CODE,TERMatat,Skipping,"(""america"" AND (""washington"" AND (""congress"" OR ""president"")))",nested,0,6751.7
+2025-11-02T19:15:02.309443,self,WORDCOUNT,CUSTOM,CODE,TERMatat,Skipping,america washington,edge,0,1004.251
+2025-11-02T19:15:05.598970,self,WORDCOUNT,CUSTOM,CODE,TERMatat,Skipping,"""united states of america"" OR america",edge,0,3289.147
+2025-11-02T19:15:09.437248,self,WORDCOUNT,CUSTOM,CODE,TERMatat,Skipping,"""washington"" AND NOT ""washington""",edge,0,3837.991
+2025-11-02T19:15:10.501177,self,WORDCOUNT,CUSTOM,CODE,TERMatat,Skipping,(america),edge,0,1063.447
+2025-11-02T19:15:17.387337,self,WORDCOUNT,CUSTOM,CODE,TERMatat,Skipping,"NOT (""america"" AND ""washington"")",edge,0,6886.794
+2025-11-02T19:19:50.493320,self,BOOLEAN,CUSTOM,CLIB,TERMatat,Skipping,america,term,0,18652.156
+2025-11-02T19:19:51.385727,self,BOOLEAN,CUSTOM,CLIB,TERMatat,Skipping,washington,term,0,892.59
+2025-11-02T19:19:52.276414,self,BOOLEAN,CUSTOM,CLIB,TERMatat,Skipping,constitution,term,0,890.909
+2025-11-02T19:19:55.061249,self,BOOLEAN,CUSTOM,CLIB,TERMatat,Skipping,america AND washington,boolean,0,2785.994
+2025-11-02T19:19:57.962535,self,BOOLEAN,CUSTOM,CLIB,TERMatat,Skipping,america OR washington,boolean,0,2902.224
+2025-11-02T19:20:01.980734,self,BOOLEAN,CUSTOM,CLIB,TERMatat,Skipping,america AND NOT washington,boolean,0,4019.301
+2025-11-02T19:20:03.979045,self,BOOLEAN,CUSTOM,CLIB,TERMatat,Skipping,NOT america,boolean,0,1998.516
+2025-11-02T19:20:04.969534,self,BOOLEAN,CUSTOM,CLIB,TERMatat,Skipping,"""united states of america""",phrase,0,990.452
+2025-11-02T19:20:05.982002,self,BOOLEAN,CUSTOM,CLIB,TERMatat,Skipping,"""american constitution""",phrase,0,1012.423
+2025-11-02T19:20:06.974424,self,BOOLEAN,CUSTOM,CLIB,TERMatat,Skipping,"""american independence""",phrase,0,992.371
+2025-11-02T19:20:09.844444,self,BOOLEAN,CUSTOM,CLIB,TERMatat,Skipping,"""united states of america"" AND ""american constitution""",mixed,0,2870.311
+2025-11-02T19:20:12.693067,self,BOOLEAN,CUSTOM,CLIB,TERMatat,Skipping,"""american independence"" OR america",mixed,0,2848.647
+2025-11-02T19:20:16.926417,self,BOOLEAN,CUSTOM,CLIB,TERMatat,Skipping,"""united states of america"" AND NOT constitution",mixed,0,4233.636
+2025-11-02T19:20:20.177491,self,BOOLEAN,CUSTOM,CLIB,TERMatat,Skipping,"""north america"" OR ""south america""",mixed,0,3251.027
+2025-11-02T19:20:26.344964,self,BOOLEAN,CUSTOM,CLIB,TERMatat,Skipping,"(""america"" AND ""washington"") OR (""congress"" AND ""president"")",grouped,0,6167.561
+2025-11-02T19:20:32.980118,self,BOOLEAN,CUSTOM,CLIB,TERMatat,Skipping,"(""america"" OR ""washington"") AND (""congress"" OR ""president"")",grouped,0,6635.095
+2025-11-02T19:20:41.407917,self,BOOLEAN,CUSTOM,CLIB,TERMatat,Skipping,"(""america"" AND NOT ""washington"") OR (""washington"" AND NOT ""america"")",grouped,0,8427.667
+2025-11-02T19:20:47.403690,self,BOOLEAN,CUSTOM,CLIB,TERMatat,Skipping,"(america OR washington) AND NOT ""congress""",grouped,0,5995.501
+2025-11-02T19:20:55.910322,self,BOOLEAN,CUSTOM,CLIB,TERMatat,Skipping,"((""america"" AND ""washington"") OR ""president"") AND NOT ""congress""",nested,0,8506.346
+2025-11-02T19:21:03.144334,self,BOOLEAN,CUSTOM,CLIB,TERMatat,Skipping,"((""america"" OR ""washington"") AND (""congress"" OR ""president""))",nested,0,7233.707
+2025-11-02T19:21:07.991595,self,BOOLEAN,CUSTOM,CLIB,TERMatat,Skipping,"(""america"" AND (""washington"" OR ""president""))",nested,0,4846.905
+2025-11-02T19:21:14.488552,self,BOOLEAN,CUSTOM,CLIB,TERMatat,Skipping,"(""america"" AND (""washington"" AND (""congress"" OR ""president"")))",nested,0,6496.629
+2025-11-02T19:21:15.479364,self,BOOLEAN,CUSTOM,CLIB,TERMatat,Skipping,america washington,edge,0,990.409
+2025-11-02T19:21:18.273952,self,BOOLEAN,CUSTOM,CLIB,TERMatat,Skipping,"""united states of america"" OR america",edge,0,2794.173
+2025-11-02T19:21:22.105104,self,BOOLEAN,CUSTOM,CLIB,TERMatat,Skipping,"""washington"" AND NOT ""washington""",edge,0,3830.83
+2025-11-02T19:21:23.286188,self,BOOLEAN,CUSTOM,CLIB,TERMatat,Skipping,(america),edge,0,1180.716
+2025-11-02T19:21:27.006813,self,BOOLEAN,CUSTOM,CLIB,TERMatat,Skipping,"NOT (""america"" AND ""washington"")",edge,0,3720.19
+2025-11-02T19:21:53.711288,self,TFIDF,CUSTOM,CLIB,TERMatat,Skipping,america,term,0,25390.665
+2025-11-02T19:21:54.660000,self,TFIDF,CUSTOM,CLIB,TERMatat,Skipping,washington,term,0,948.207
+2025-11-02T19:21:55.594015,self,TFIDF,CUSTOM,CLIB,TERMatat,Skipping,constitution,term,0,933.654
+2025-11-02T19:21:58.442853,self,TFIDF,CUSTOM,CLIB,TERMatat,Skipping,america AND washington,boolean,0,2848.446
+2025-11-02T19:22:01.485843,self,TFIDF,CUSTOM,CLIB,TERMatat,Skipping,america OR washington,boolean,0,3042.497
+2025-11-02T19:22:05.427581,self,TFIDF,CUSTOM,CLIB,TERMatat,Skipping,america AND NOT washington,boolean,0,3941.278
+2025-11-02T19:22:10.190345,self,TFIDF,CUSTOM,CLIB,TERMatat,Skipping,NOT america,boolean,0,4762.428
+2025-11-02T19:22:11.128863,self,TFIDF,CUSTOM,CLIB,TERMatat,Skipping,"""united states of america""",phrase,0,938.229
+2025-11-02T19:22:12.066591,self,TFIDF,CUSTOM,CLIB,TERMatat,Skipping,"""american constitution""",phrase,0,937.42
+2025-11-02T19:22:12.988531,self,TFIDF,CUSTOM,CLIB,TERMatat,Skipping,"""american independence""",phrase,0,921.651
+2025-11-02T19:22:15.768388,self,TFIDF,CUSTOM,CLIB,TERMatat,Skipping,"""united states of america"" AND ""american constitution""",mixed,0,2779.56
+2025-11-02T19:22:18.651410,self,TFIDF,CUSTOM,CLIB,TERMatat,Skipping,"""american independence"" OR america",mixed,0,2882.442
+2025-11-02T19:22:22.372745,self,TFIDF,CUSTOM,CLIB,TERMatat,Skipping,"""united states of america"" AND NOT constitution",mixed,0,3721.051
+2025-11-02T19:22:25.359736,self,TFIDF,CUSTOM,CLIB,TERMatat,Skipping,"""north america"" OR ""south america""",mixed,0,2986.72
+2025-11-02T19:22:31.844501,self,TFIDF,CUSTOM,CLIB,TERMatat,Skipping,"(""america"" AND ""washington"") OR (""congress"" AND ""president"")",grouped,0,6484.305
+2025-11-02T19:22:38.402699,self,TFIDF,CUSTOM,CLIB,TERMatat,Skipping,"(""america"" OR ""washington"") AND (""congress"" OR ""president"")",grouped,0,6557.686
+2025-11-02T19:22:47.257985,self,TFIDF,CUSTOM,CLIB,TERMatat,Skipping,"(""america"" AND NOT ""washington"") OR (""washington"" AND NOT ""america"")",grouped,0,8854.805
+2025-11-02T19:22:53.137716,self,TFIDF,CUSTOM,CLIB,TERMatat,Skipping,"(america OR washington) AND NOT ""congress""",grouped,0,5879.316
+2025-11-02T19:23:00.576363,self,TFIDF,CUSTOM,CLIB,TERMatat,Skipping,"((""america"" AND ""washington"") OR ""president"") AND NOT ""congress""",nested,0,7438.23
+2025-11-02T19:23:07.135036,self,TFIDF,CUSTOM,CLIB,TERMatat,Skipping,"((""america"" OR ""washington"") AND (""congress"" OR ""president""))",nested,0,6558.286
+2025-11-02T19:23:11.840567,self,TFIDF,CUSTOM,CLIB,TERMatat,Skipping,"(""america"" AND (""washington"" OR ""president""))",nested,0,4705.087
+2025-11-02T19:23:18.193184,self,TFIDF,CUSTOM,CLIB,TERMatat,Skipping,"(""america"" AND (""washington"" AND (""congress"" OR ""president"")))",nested,0,6352.236
+2025-11-02T19:23:19.120635,self,TFIDF,CUSTOM,CLIB,TERMatat,Skipping,america washington,edge,0,926.982
+2025-11-02T19:23:21.896414,self,TFIDF,CUSTOM,CLIB,TERMatat,Skipping,"""united states of america"" OR america",edge,0,2775.359
+2025-11-02T19:23:25.563870,self,TFIDF,CUSTOM,CLIB,TERMatat,Skipping,"""washington"" AND NOT ""washington""",edge,0,3667.165
+2025-11-02T19:23:26.539726,self,TFIDF,CUSTOM,CLIB,TERMatat,Skipping,(america),edge,0,975.402
+2025-11-02T19:23:33.063750,self,TFIDF,CUSTOM,CLIB,TERMatat,Skipping,"NOT (""america"" AND ""washington"")",edge,0,6523.622
+2025-11-02T19:23:51.374132,self,WORDCOUNT,CUSTOM,CLIB,TERMatat,Skipping,america,term,0,16785.452
+2025-11-02T19:23:52.319301,self,WORDCOUNT,CUSTOM,CLIB,TERMatat,Skipping,washington,term,0,944.754
+2025-11-02T19:23:53.216504,self,WORDCOUNT,CUSTOM,CLIB,TERMatat,Skipping,constitution,term,0,896.86
+2025-11-02T19:23:56.005595,self,WORDCOUNT,CUSTOM,CLIB,TERMatat,Skipping,america AND washington,boolean,0,2788.694
+2025-11-02T19:23:58.911853,self,WORDCOUNT,CUSTOM,CLIB,TERMatat,Skipping,america OR washington,boolean,0,2905.852
+2025-11-02T19:24:02.722911,self,WORDCOUNT,CUSTOM,CLIB,TERMatat,Skipping,america AND NOT washington,boolean,0,3810.627
+2025-11-02T19:24:07.331053,self,WORDCOUNT,CUSTOM,CLIB,TERMatat,Skipping,NOT america,boolean,0,4607.861
+2025-11-02T19:24:08.205616,self,WORDCOUNT,CUSTOM,CLIB,TERMatat,Skipping,"""united states of america""",phrase,0,874.277
+2025-11-02T19:24:09.117257,self,WORDCOUNT,CUSTOM,CLIB,TERMatat,Skipping,"""american constitution""",phrase,0,911.356
+2025-11-02T19:24:10.013011,self,WORDCOUNT,CUSTOM,CLIB,TERMatat,Skipping,"""american independence""",phrase,0,895.482
+2025-11-02T19:24:12.745169,self,WORDCOUNT,CUSTOM,CLIB,TERMatat,Skipping,"""united states of america"" AND ""american constitution""",mixed,0,2731.886
+2025-11-02T19:24:15.539598,self,WORDCOUNT,CUSTOM,CLIB,TERMatat,Skipping,"""american independence"" OR america",mixed,0,2793.976
+2025-11-02T19:24:19.123617,self,WORDCOUNT,CUSTOM,CLIB,TERMatat,Skipping,"""united states of america"" AND NOT constitution",mixed,0,3583.743
+2025-11-02T19:24:22.240399,self,WORDCOUNT,CUSTOM,CLIB,TERMatat,Skipping,"""north america"" OR ""south america""",mixed,0,3116.441
+2025-11-02T19:24:28.592965,self,WORDCOUNT,CUSTOM,CLIB,TERMatat,Skipping,"(""america"" AND ""washington"") OR (""congress"" AND ""president"")",grouped,0,6352.151
+2025-11-02T19:24:34.868947,self,WORDCOUNT,CUSTOM,CLIB,TERMatat,Skipping,"(""america"" OR ""washington"") AND (""congress"" OR ""president"")",grouped,0,6275.538
+2025-11-02T19:24:43.555663,self,WORDCOUNT,CUSTOM,CLIB,TERMatat,Skipping,"(""america"" AND NOT ""washington"") OR (""washington"" AND NOT ""america"")",grouped,0,8686.337
+2025-11-02T19:24:49.270273,self,WORDCOUNT,CUSTOM,CLIB,TERMatat,Skipping,"(america OR washington) AND NOT ""congress""",grouped,0,5714.19
+2025-11-02T19:24:56.438960,self,WORDCOUNT,CUSTOM,CLIB,TERMatat,Skipping,"((""america"" AND ""washington"") OR ""president"") AND NOT ""congress""",nested,0,7168.305
+2025-11-02T19:25:02.815232,self,WORDCOUNT,CUSTOM,CLIB,TERMatat,Skipping,"((""america"" OR ""washington"") AND (""congress"" OR ""president""))",nested,0,6375.89
+2025-11-02T19:25:07.364216,self,WORDCOUNT,CUSTOM,CLIB,TERMatat,Skipping,"(""america"" AND (""washington"" OR ""president""))",nested,0,4548.573
+2025-11-02T19:25:13.645493,self,WORDCOUNT,CUSTOM,CLIB,TERMatat,Skipping,"(""america"" AND (""washington"" AND (""congress"" OR ""president"")))",nested,0,6280.817
+2025-11-02T19:25:14.581482,self,WORDCOUNT,CUSTOM,CLIB,TERMatat,Skipping,america washington,edge,0,935.581
+2025-11-02T19:25:17.415247,self,WORDCOUNT,CUSTOM,CLIB,TERMatat,Skipping,"""united states of america"" OR america",edge,0,2833.353
+2025-11-02T19:25:20.973482,self,WORDCOUNT,CUSTOM,CLIB,TERMatat,Skipping,"""washington"" AND NOT ""washington""",edge,0,3557.952
+2025-11-02T19:25:21.951380,self,WORDCOUNT,CUSTOM,CLIB,TERMatat,Skipping,(america),edge,0,977.391
+2025-11-02T19:25:28.516268,self,WORDCOUNT,CUSTOM,CLIB,TERMatat,Skipping,"NOT (""america"" AND ""washington"")",edge,0,6564.49
+2025-11-03T05:18:23.136673,self,BOOLEAN,CUSTOM,NONE,DOCatat,Null,america,term,0,92729.904,4218509.97,5444314.59
+2025-11-03T05:18:24.412184,self,BOOLEAN,CUSTOM,NONE,DOCatat,Null,washington,term,0,1274.293,27.11,2560.81
+2025-11-03T05:18:25.624839,self,BOOLEAN,CUSTOM,NONE,DOCatat,Null,constitution,term,0,1212.259,4.04,2560.81
+2025-11-03T05:18:26.844476,self,BOOLEAN,CUSTOM,NONE,DOCatat,Null,america AND washington,boolean,0,1219.209,7.76,2561.15
+2025-11-03T05:18:30.495471,self,BOOLEAN,CUSTOM,NONE,DOCatat,Null,america OR washington,boolean,0,3650.433,115.29,2907.76
+2025-11-03T05:18:31.692301,self,BOOLEAN,CUSTOM,NONE,DOCatat,Null,america AND NOT washington,boolean,0,1196.544,3.53,2561.69
+2025-11-03T05:18:34.181409,self,BOOLEAN,CUSTOM,NONE,DOCatat,Null,NOT america,boolean,0,2488.518,114.86,4571.35
+2025-11-03T05:18:35.450193,self,BOOLEAN,CUSTOM,NONE,DOCatat,Null,"""united states of america""",phrase,0,1268.468,2.19,2560.88
+2025-11-03T05:18:36.728250,self,BOOLEAN,CUSTOM,NONE,DOCatat,Null,"""american constitution""",phrase,0,1277.73,4.34,2560.88
+2025-11-03T05:18:38.011417,self,BOOLEAN,CUSTOM,NONE,DOCatat,Null,"""american independence""",phrase,0,1282.828,2.7,2560.88
+2025-11-03T05:18:39.652437,self,BOOLEAN,CUSTOM,NONE,DOCatat,Null,"""united states of america"" AND ""american constitution""",mixed,0,1640.733,3.09,2561.17
+2025-11-03T05:18:43.385273,self,BOOLEAN,CUSTOM,NONE,DOCatat,Null,"""american independence"" OR america",mixed,0,3732.27,115.04,2874.55
+2025-11-03T05:18:44.664758,self,BOOLEAN,CUSTOM,NONE,DOCatat,Null,"""united states of america"" AND NOT constitution",mixed,0,1279.183,2.69,2561.3
+2025-11-03T05:18:48.137383,self,BOOLEAN,CUSTOM,NONE,DOCatat,Null,"""north america"" OR ""south america""",mixed,0,3472.201,6.12,2886.44
+2025-11-03T05:18:51.402721,self,BOOLEAN,CUSTOM,NONE,DOCatat,Null,"(""america"" AND ""washington"") OR (""congress"" AND ""president"")",grouped,0,3264.977,6.34,2882.67
+2025-11-03T05:18:52.491301,self,BOOLEAN,CUSTOM,NONE,DOCatat,Null,"(""america"" OR ""washington"") AND (""congress"" OR ""president"")",grouped,0,1088.246,3.53,2561.8
+2025-11-03T05:18:55.835426,self,BOOLEAN,CUSTOM,NONE,DOCatat,Null,"(""america"" AND NOT ""washington"") OR (""washington"" AND NOT ""america"")",grouped,0,3343.803,2.99,2875.35
+2025-11-03T05:18:57.084997,self,BOOLEAN,CUSTOM,NONE,DOCatat,Null,"(america OR washington) AND NOT ""congress""",grouped,0,1249.258,2.46,2561.59
+2025-11-03T05:18:58.380521,self,BOOLEAN,CUSTOM,NONE,DOCatat,Null,"((""america"" AND ""washington"") OR ""president"") AND NOT ""congress""",nested,0,1295.198,3.36,2562.77
+2025-11-03T05:18:59.670621,self,BOOLEAN,CUSTOM,NONE,DOCatat,Null,"((""america"" OR ""washington"") AND (""congress"" OR ""president""))",nested,0,1289.735,3.93,2561.8
+2025-11-03T05:19:00.966314,self,BOOLEAN,CUSTOM,NONE,DOCatat,Null,"(""america"" AND (""washington"" OR ""president""))",nested,0,1295.323,4.13,2561.52
+2025-11-03T05:19:02.502197,self,BOOLEAN,CUSTOM,NONE,DOCatat,Null,"(""america"" AND (""washington"" AND (""congress"" OR ""president"")))",nested,0,1535.501,5.19,2563.06
+2025-11-03T05:19:03.711064,self,BOOLEAN,CUSTOM,NONE,DOCatat,Null,america washington,edge,0,1208.477,4.47,2560.88
+2025-11-03T05:19:07.453592,self,BOOLEAN,CUSTOM,NONE,DOCatat,Null,"""united states of america"" OR america",edge,0,3740.978,114.14,2873.96
+2025-11-03T05:19:08.640345,self,BOOLEAN,CUSTOM,NONE,DOCatat,Null,"""washington"" AND NOT ""washington""",edge,0,1186.44,2.74,2561.29
+2025-11-03T05:19:09.784992,self,BOOLEAN,CUSTOM,NONE,DOCatat,Null,(america),edge,0,1144.054,114.48,2560.87
+2025-11-03T05:19:12.206839,self,BOOLEAN,CUSTOM,NONE,DOCatat,Null,"NOT (""america"" AND ""washington"")",edge,0,2421.281,114.14,4449.39
+2025-11-03T05:21:45.112187,self,TFIDF,CUSTOM,NONE,DOCatat,Null,america,term,0,137023.814,4931028.46,7083539.22
+2025-11-03T05:21:46.772202,self,TFIDF,CUSTOM,NONE,DOCatat,Null,washington,term,0,1658.873,25.66,2560.81
+2025-11-03T05:21:47.946270,self,TFIDF,CUSTOM,NONE,DOCatat,Null,constitution,term,0,1173.626,4.06,2560.81
+2025-11-03T05:21:49.108822,self,TFIDF,CUSTOM,NONE,DOCatat,Null,america AND washington,boolean,0,1162.127,6.88,2561.15
+2025-11-03T05:21:52.778624,self,TFIDF,CUSTOM,NONE,DOCatat,Null,america OR washington,boolean,0,3669.263,67.2,2907.22
+2025-11-03T05:21:53.894354,self,TFIDF,CUSTOM,NONE,DOCatat,Null,america AND NOT washington,boolean,0,1115.437,2.7,2561.28
+2025-11-03T05:21:59.744518,self,TFIDF,CUSTOM,NONE,DOCatat,Null,NOT america,boolean,0,5849.823,3.6,4571.35
+2025-11-03T05:22:00.934493,self,TFIDF,CUSTOM,NONE,DOCatat,Null,"""united states of america""",phrase,0,1189.671,2.19,2560.88
+2025-11-03T05:22:02.094339,self,TFIDF,CUSTOM,NONE,DOCatat,Null,"""american constitution""",phrase,0,1159.545,3.91,2560.88
+2025-11-03T05:22:03.257293,self,TFIDF,CUSTOM,NONE,DOCatat,Null,"""american independence""",phrase,0,1162.67,2.65,2560.88
+2025-11-03T05:22:04.429708,self,TFIDF,CUSTOM,NONE,DOCatat,Null,"""united states of america"" AND ""american constitution""",mixed,0,1172.117,2.62,2561.17
+2025-11-03T05:22:08.413761,self,TFIDF,CUSTOM,NONE,DOCatat,Null,"""american independence"" OR america",mixed,0,3983.522,57.11,2874.55
+2025-11-03T05:22:09.833911,self,TFIDF,CUSTOM,NONE,DOCatat,Null,"""united states of america"" AND NOT constitution",mixed,0,1419.861,2.27,2561.3
+2025-11-03T05:22:13.412264,self,TFIDF,CUSTOM,NONE,DOCatat,Null,"""north america"" OR ""south america""",mixed,0,3578.025,3.71,2885.87
+2025-11-03T05:22:17.255271,self,TFIDF,CUSTOM,NONE,DOCatat,Null,"(""america"" AND ""washington"") OR (""congress"" AND ""president"")",grouped,0,3842.546,8.05,2882.67
+2025-11-03T05:22:18.572046,self,TFIDF,CUSTOM,NONE,DOCatat,Null,"(""america"" OR ""washington"") AND (""congress"" OR ""president"")",grouped,0,1316.388,2.88,2561.8
+2025-11-03T05:22:22.314436,self,TFIDF,CUSTOM,NONE,DOCatat,Null,"(""america"" AND NOT ""washington"") OR (""washington"" AND NOT ""america"")",grouped,0,3742.065,2.99,2875.35
+2025-11-03T05:22:23.534270,self,TFIDF,CUSTOM,NONE,DOCatat,Null,"(america OR washington) AND NOT ""congress""",grouped,0,1219.348,2.41,2561.59
+2025-11-03T05:22:24.802470,self,TFIDF,CUSTOM,NONE,DOCatat,Null,"((""america"" AND ""washington"") OR ""president"") AND NOT ""congress""",nested,0,1267.903,3.32,2562.77
+2025-11-03T05:22:25.956689,self,TFIDF,CUSTOM,NONE,DOCatat,Null,"((""america"" OR ""washington"") AND (""congress"" OR ""president""))",nested,0,1153.846,3.89,2561.8
+2025-11-03T05:22:27.097687,self,TFIDF,CUSTOM,NONE,DOCatat,Null,"(""america"" AND (""washington"" OR ""president""))",nested,0,1140.623,4.12,2561.52
+2025-11-03T05:22:28.354604,self,TFIDF,CUSTOM,NONE,DOCatat,Null,"(""america"" AND (""washington"" AND (""congress"" OR ""president"")))",nested,0,1256.557,4.49,2563.06
+2025-11-03T05:22:29.813239,self,TFIDF,CUSTOM,NONE,DOCatat,Null,america washington,edge,0,1458.203,4.47,2560.88
+2025-11-03T05:22:33.830174,self,TFIDF,CUSTOM,NONE,DOCatat,Null,"""united states of america"" OR america",edge,0,4016.404,56.26,2873.96
+2025-11-03T05:22:35.077926,self,TFIDF,CUSTOM,NONE,DOCatat,Null,"""washington"" AND NOT ""washington""",edge,0,1247.441,2.74,2561.29
+2025-11-03T05:22:36.490365,self,TFIDF,CUSTOM,NONE,DOCatat,Null,(america),edge,0,1411.766,56.73,2560.87
+2025-11-03T05:22:42.508665,self,TFIDF,CUSTOM,NONE,DOCatat,Null,"NOT (""america"" AND ""washington"")",edge,0,6017.736,65.76,4449.39
+2025-11-03T05:24:19.625055,self,WORDCOUNT,CUSTOM,NONE,DOCatat,Null,america,term,0,85256.82,4218427.84,4985174.27
+2025-11-03T05:24:20.833227,self,WORDCOUNT,CUSTOM,NONE,DOCatat,Null,washington,term,0,1207.625,22.52,2560.81
+2025-11-03T05:24:22.062042,self,WORDCOUNT,CUSTOM,NONE,DOCatat,Null,constitution,term,0,1228.438,4.08,2560.81
+2025-11-03T05:24:23.361442,self,WORDCOUNT,CUSTOM,NONE,DOCatat,Null,america AND washington,boolean,0,1298.98,4.53,2561.15
+2025-11-03T05:24:27.480542,self,WORDCOUNT,CUSTOM,NONE,DOCatat,Null,america OR washington,boolean,0,4118.535,108.4,2907.27
+2025-11-03T05:24:28.701343,self,WORDCOUNT,CUSTOM,NONE,DOCatat,Null,america AND NOT washington,boolean,0,1220.504,2.75,2561.28
+2025-11-03T05:24:34.144962,self,WORDCOUNT,CUSTOM,NONE,DOCatat,Null,NOT america,boolean,0,5443.283,3.65,4571.39
+2025-11-03T05:24:35.305357,self,WORDCOUNT,CUSTOM,NONE,DOCatat,Null,"""united states of america""",phrase,0,1160.084,2.24,2560.88
+2025-11-03T05:24:36.482815,self,WORDCOUNT,CUSTOM,NONE,DOCatat,Null,"""american constitution""",phrase,0,1177.152,3.95,2560.88
+2025-11-03T05:24:37.697777,self,WORDCOUNT,CUSTOM,NONE,DOCatat,Null,"""american independence""",phrase,0,1214.67,2.7,2560.88
+2025-11-03T05:24:38.863415,self,WORDCOUNT,CUSTOM,NONE,DOCatat,Null,"""united states of america"" AND ""american constitution""",mixed,0,1165.307,2.67,2561.17
+2025-11-03T05:24:42.489312,self,WORDCOUNT,CUSTOM,NONE,DOCatat,Null,"""american independence"" OR america",mixed,0,3625.352,68.6,2874.55
+2025-11-03T05:24:43.646090,self,WORDCOUNT,CUSTOM,NONE,DOCatat,Null,"""united states of america"" AND NOT constitution",mixed,0,1156.482,2.27,2561.3
+2025-11-03T05:24:47.235947,self,WORDCOUNT,CUSTOM,NONE,DOCatat,Null,"""north america"" OR ""south america""",mixed,0,3589.529,3.8,2885.96
+2025-11-03T05:24:50.811130,self,WORDCOUNT,CUSTOM,NONE,DOCatat,Null,"(""america"" AND ""washington"") OR (""congress"" AND ""president"")",grouped,0,3574.769,5.74,2882.72
+2025-11-03T05:24:51.964487,self,WORDCOUNT,CUSTOM,NONE,DOCatat,Null,"(""america"" OR ""washington"") AND (""congress"" OR ""president"")",grouped,0,1153.002,2.92,2561.8
+2025-11-03T05:24:55.503035,self,WORDCOUNT,CUSTOM,NONE,DOCatat,Null,"(""america"" AND NOT ""washington"") OR (""washington"" AND NOT ""america"")",grouped,0,3538.242,3.04,2875.35
+2025-11-03T05:24:56.658111,self,WORDCOUNT,CUSTOM,NONE,DOCatat,Null,"(america OR washington) AND NOT ""congress""",grouped,0,1154.786,2.46,2561.59
+2025-11-03T05:24:57.830925,self,WORDCOUNT,CUSTOM,NONE,DOCatat,Null,"((""america"" AND ""washington"") OR ""president"") AND NOT ""congress""",nested,0,1172.517,3.36,2562.77
+2025-11-03T05:24:59.007238,self,WORDCOUNT,CUSTOM,NONE,DOCatat,Null,"((""america"" OR ""washington"") AND (""congress"" OR ""president""))",nested,0,1175.958,3.93,2561.8
+2025-11-03T05:25:00.197455,self,WORDCOUNT,CUSTOM,NONE,DOCatat,Null,"(""america"" AND (""washington"" OR ""president""))",nested,0,1189.85,4.12,2561.52
+2025-11-03T05:25:01.392380,self,WORDCOUNT,CUSTOM,NONE,DOCatat,Null,"(""america"" AND (""washington"" AND (""congress"" OR ""president"")))",nested,0,1194.568,4.53,2563.06
+2025-11-03T05:25:02.583344,self,WORDCOUNT,CUSTOM,NONE,DOCatat,Null,america washington,edge,0,1190.534,4.45,2560.88
+2025-11-03T05:25:06.274622,self,WORDCOUNT,CUSTOM,NONE,DOCatat,Null,"""united states of america"" OR america",edge,0,3690.75,67.7,2873.96
+2025-11-03T05:25:07.425669,self,WORDCOUNT,CUSTOM,NONE,DOCatat,Null,"""washington"" AND NOT ""washington""",edge,0,1150.749,2.77,2561.29
+2025-11-03T05:25:08.700261,self,WORDCOUNT,CUSTOM,NONE,DOCatat,Null,(america),edge,0,1274.07,68.22,2560.87
+2025-11-03T05:25:14.190942,self,WORDCOUNT,CUSTOM,NONE,DOCatat,Null,"NOT (""america"" AND ""washington"")",edge,0,5490.103,97.63,4449.44
