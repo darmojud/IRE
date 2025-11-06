@@ -1,0 +1,37 @@
+This assignment is divided into two activities:
+
+Activity 2.1 Deduplication:
+Attached is a small data set (dedup_data.csv) with about 5K entries each of which is details (given_name, surname, street_number, address_1, address_2, suburb, postcode, state, date_of_birth, soc_sec_id) of synthetically generated persons. Each entry is uniquely identified by the id column and there are potentially multiple entries of the (generated) persons each with some variations in entered details due to reporting noise and errors. The task is to identify all the different records of the same person and group all those records.
+
+ 
+Activity 2.2 Crawling: 
+You are given a web-server you can run locally that you can ping to get a page reporting:
+
+A unique identifier for that page (page_id)
+A node_id that updates at unknown time intervals
+all the previous node ids and update timestamps for that page, and
+list of all outgoing links from that page.
+Your task is to crawl the website, estimate the page rank of each of the pages and update node ids for all pages efficiently, minimising the number of page visits. 
+
+We will be incrementally rolling out updated versions of the web-server and instructions to use the web server. 
+
+As a test we have attached a docker image .tar file for amd64 systems you can load and run to launch a web server at port 3000. We have attached a README.md that contains commands for launching the server. This is not the final version of the web server and may have bugs. Please reach out to the TAs by replying to the announcement thread on Moodle in case of any issues. 
+
+Instructions on running the server
+Run the following commands to launch the webserver at http://localhost:3000
+
+Load and Run Image
+ 
+Verify The Image Contents (One Time Operation. Optional, but recommended)
+sha256sum -c crawling_assignment-1.0-amd64.tar.sha256
+Load the Image (One Time Operation)
+docker load -i crawling_assignment-1.0-amd64.tar
+Run the Image (Every Time you restart the server)
+docker run --rm -p 3000:3000 --read-only --tmpfs /tmp:rw,noexec,nosuid --cap-drop ALL --security-opt no-new-privileges --pids-limit 128 --memory 256m crawling_assignment:1.0
+
+To Stop the Server
+docker stop <container-id-or-name>
+ 
+crawling_assignment-1.0-amd64.tar crawling_assignment-1.0-amd64.tar16 October 2025, 6:45 PM
+crawling_assignment-1.0-amd64.tar.sha256 crawling_assignment-1.0-amd64.tar.sha25616 October 2025, 6:45 PM
+dedup_data.csv dedup_data.csv16 October 2025, 6:45 PM
