@@ -1,0 +1,669 @@
+python3 test.py
+/Users/darmojudeekshitha/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+Loaded 12212 articles
+Indexing articles to Elasticsearch...
+Indexed 12212 articles to Elasticsearch
+
+Starting News Ranking A/B Test Experiment
+
+=== News Ranking A/B Testing Experiment ===
+
+--- Phase 1: Initial Data Collection (Baseline Only) ---
+
+==========================================================================================
+COLLECTING 500 QUERIES (Phase: BASELINE)
+==========================================================================================
+BASELINE
+  Queries:     50
+  Users:     43
+  Total Impressions:   1000
+  ────────────────────────────────────
+  CTR:                    0.30%
+  Avg Dwell Time:         0.02s
+  Likes/Query:           0.000
+  Shares/Query:          0.000
+  Bookmarks/Query:       0.000
+  Actions/Query:          0.12
+  Weighted Clicks:      0.0626
+
+==========================================================================================
+
+
+Variant Distribution:
+         baseline:   50 (100.0%)
+BASELINE
+  Queries:    100
+  Users:     81
+  Total Impressions:   2000
+  ────────────────────────────────────
+  CTR:                    0.45%
+  Avg Dwell Time:         0.26s
+  Likes/Query:           0.000
+  Shares/Query:          0.000
+  Bookmarks/Query:       0.000
+  Actions/Query:          0.18
+  Weighted Clicks:      0.1322
+
+==========================================================================================
+
+
+Variant Distribution:
+         baseline:  100 (100.0%)
+BASELINE
+  Queries:    150
+  Users:    110
+  Total Impressions:   3000
+  ────────────────────────────────────
+  CTR:                    0.50%
+  Avg Dwell Time:         0.41s
+  Likes/Query:           0.000
+  Shares/Query:          0.007
+  Bookmarks/Query:       0.000
+  Actions/Query:          0.21
+  Weighted Clicks:      0.2333
+
+==========================================================================================
+
+
+Variant Distribution:
+         baseline:  150 (100.0%)
+BASELINE
+  Queries:    200
+  Users:    133
+  Total Impressions:   4000
+  ────────────────────────────────────
+  CTR:                    0.55%
+  Avg Dwell Time:         1.00s
+  Likes/Query:           0.000
+  Shares/Query:          0.005
+  Bookmarks/Query:       0.000
+  Actions/Query:          0.23
+  Weighted Clicks:      0.2827
+
+==========================================================================================
+
+
+Variant Distribution:
+         baseline:  200 (100.0%)
+BASELINE
+  Queries:    250
+  Users:    146
+  Total Impressions:   5000
+  ────────────────────────────────────
+  CTR:                    0.54%
+  Avg Dwell Time:         0.96s
+  Likes/Query:           0.000
+  Shares/Query:          0.004
+  Bookmarks/Query:       0.000
+  Actions/Query:          0.22
+  Weighted Clicks:      0.2622
+
+==========================================================================================
+
+
+Variant Distribution:
+         baseline:  250 (100.0%)
+BASELINE
+  Queries:    300
+  Users:    157
+  Total Impressions:   6000
+  ────────────────────────────────────
+  CTR:                    0.48%
+  Avg Dwell Time:         0.80s
+  Likes/Query:           0.000
+  Shares/Query:          0.003
+  Bookmarks/Query:       0.000
+  Actions/Query:          0.20
+  Weighted Clicks:      0.2248
+
+==========================================================================================
+
+
+Variant Distribution:
+         baseline:  300 (100.0%)
+BASELINE
+  Queries:    350
+  Users:    171
+  Total Impressions:   7000
+  ────────────────────────────────────
+  CTR:                    0.46%
+  Avg Dwell Time:         0.75s
+  Likes/Query:           0.000
+  Shares/Query:          0.003
+  Bookmarks/Query:       0.000
+  Actions/Query:          0.19
+  Weighted Clicks:      0.2121
+
+==========================================================================================
+
+
+Variant Distribution:
+         baseline:  350 (100.0%)
+BASELINE
+  Queries:    400
+  Users:    177
+  Total Impressions:   8000
+  ────────────────────────────────────
+  CTR:                    0.44%
+  Avg Dwell Time:         0.74s
+  Likes/Query:           0.000
+  Shares/Query:          0.003
+  Bookmarks/Query:       0.000
+  Actions/Query:          0.18
+  Weighted Clicks:      0.2042
+
+==========================================================================================
+
+
+Variant Distribution:
+         baseline:  400 (100.0%)
+BASELINE
+  Queries:    450
+  Users:    184
+  Total Impressions:   9000
+  ────────────────────────────────────
+  CTR:                    0.43%
+  Avg Dwell Time:         0.80s
+  Likes/Query:           0.000
+  Shares/Query:          0.004
+  Bookmarks/Query:       0.000
+  Actions/Query:          0.18
+  Weighted Clicks:      0.2131
+
+==========================================================================================
+
+
+Variant Distribution:
+         baseline:  450 (100.0%)
+BASELINE
+  Queries:    500
+  Users:    190
+  Total Impressions:  10000
+  ────────────────────────────────────
+  CTR:                    0.43%
+  Avg Dwell Time:         0.78s
+  Likes/Query:           0.000
+  Shares/Query:          0.004
+  Bookmarks/Query:       0.000
+  Actions/Query:          0.18
+  Weighted Clicks:      0.2155
+
+==========================================================================================
+
+
+Variant Distribution:
+         baseline:  500 (100.0%)
+
+Final variant distribution:
+  baseline: 500 (100.0%)
+Collected 10000 total interaction logs
+Saved 10000 logs to logs_baseline.csv
+
+--- Phase 2: Training Models ---
+Training collaborative filtering model...
+CF model trained with 190 users and 4599 articles
+Training LTR model with 10000 samples...
+Iteration 20/100, Loss: 0.0649
+Iteration 40/100, Loss: 0.0649
+Iteration 60/100, Loss: 0.0648
+Iteration 80/100, Loss: 0.0648
+Iteration 100/100, Loss: 0.0648
+Training XGBoost model with 10000 samples...
+XGBoost model trained
+
+--- Phase 3: A/B Testing ---
+
+==========================================================================================
+COLLECTING 200 QUERIES (Phase: EXPERIMENT)
+==========================================================================================
+BASELINE
+  Queries:     16
+  Users:     13
+  Total Impressions:    320
+  ────────────────────────────────────
+  CTR:                    0.31%
+  Avg Dwell Time:         0.01s
+  Likes/Query:           0.000
+  Shares/Query:          0.000
+  Bookmarks/Query:       0.000
+  Actions/Query:          0.12
+  Weighted Clicks:      0.0451
+COLLABORATIVE
+  Queries:     17
+  Users:     15
+  Total Impressions:    340
+  ────────────────────────────────────
+  CTR:                    0.00%
+  Avg Dwell Time:         0.00s
+  Likes/Query:           0.000
+  Shares/Query:          0.000
+  Bookmarks/Query:       0.000
+  Actions/Query:          0.00
+  Weighted Clicks:      0.0000
+LTR
+  Queries:     11
+  Users:     10
+  Total Impressions:    220
+  ────────────────────────────────────
+  CTR:                    0.45%
+  Avg Dwell Time:         0.01s
+  Likes/Query:           0.000
+  Shares/Query:          0.000
+  Bookmarks/Query:       0.000
+  Actions/Query:          0.18
+  Weighted Clicks:      0.0402
+XGBOOST
+  Queries:      6
+  Users:      6
+  Total Impressions:    120
+  ────────────────────────────────────
+  CTR:                    0.83%
+  Avg Dwell Time:         0.05s
+  Likes/Query:           0.000
+  Shares/Query:          0.000
+  Bookmarks/Query:       0.000
+  Actions/Query:          0.33
+  Weighted Clicks:      0.2343
+
+==========================================================================================
+
+
+Variant Distribution:
+         baseline:   16 ( 32.0%)
+    collaborative:   17 ( 34.0%)
+              ltr:   11 ( 22.0%)
+          xgboost:    6 ( 12.0%)
+BASELINE
+  Queries:     28
+  Users:     21
+  Total Impressions:    560
+  ────────────────────────────────────
+  CTR:                    0.36%
+  Avg Dwell Time:         0.01s
+  Likes/Query:           0.000
+  Shares/Query:          0.000
+  Bookmarks/Query:       0.000
+  Actions/Query:          0.14
+  Weighted Clicks:      0.0666
+COLLABORATIVE
+  Queries:     33
+  Users:     26
+  Total Impressions:    660
+  ────────────────────────────────────
+  CTR:                    0.15%
+  Avg Dwell Time:         0.10s
+  Likes/Query:           0.000
+  Shares/Query:          0.000
+  Bookmarks/Query:       0.000
+  Actions/Query:          0.06
+  Weighted Clicks:      0.0953
+LTR
+  Queries:     25
+  Users:     19
+  Total Impressions:    500
+  ────────────────────────────────────
+  CTR:                    0.80%
+  Avg Dwell Time:         0.24s
+  Likes/Query:           0.000
+  Shares/Query:          0.000
+  Bookmarks/Query:       0.000
+  Actions/Query:          0.32
+  Weighted Clicks:      0.2679
+XGBOOST
+  Queries:     14
+  Users:     13
+  Total Impressions:    280
+  ────────────────────────────────────
+  CTR:                    0.36%
+  Avg Dwell Time:         0.02s
+  Likes/Query:           0.000
+  Shares/Query:          0.000
+  Bookmarks/Query:       0.000
+  Actions/Query:          0.14
+  Weighted Clicks:      0.1004
+
+==========================================================================================
+
+
+Variant Distribution:
+         baseline:   28 ( 28.0%)
+    collaborative:   33 ( 33.0%)
+              ltr:   25 ( 25.0%)
+          xgboost:   14 ( 14.0%)
+BASELINE
+  Queries:     43
+  Users:     28
+  Total Impressions:    860
+  ────────────────────────────────────
+  CTR:                    0.70%
+  Avg Dwell Time:         0.24s
+  Likes/Query:           0.000
+  Shares/Query:          0.000
+  Bookmarks/Query:       0.000
+  Actions/Query:          0.28
+  Weighted Clicks:      0.2484
+COLLABORATIVE
+  Queries:     46
+  Users:     31
+  Total Impressions:    920
+  ────────────────────────────────────
+  CTR:                    0.33%
+  Avg Dwell Time:         0.52s
+  Likes/Query:           0.000
+  Shares/Query:          0.022
+  Bookmarks/Query:       0.000
+  Actions/Query:          0.15
+  Weighted Clicks:      0.2974
+LTR
+  Queries:     35
+  Users:     22
+  Total Impressions:    700
+  ────────────────────────────────────
+  CTR:                    0.71%
+  Avg Dwell Time:         0.17s
+  Likes/Query:           0.000
+  Shares/Query:          0.000
+  Bookmarks/Query:       0.000
+  Actions/Query:          0.29
+  Weighted Clicks:      0.2120
+XGBOOST
+  Queries:     26
+  Users:     20
+  Total Impressions:    520
+  ────────────────────────────────────
+  CTR:                    0.19%
+  Avg Dwell Time:         0.01s
+  Likes/Query:           0.000
+  Shares/Query:          0.000
+  Bookmarks/Query:       0.000
+  Actions/Query:          0.08
+  Weighted Clicks:      0.0541
+
+==========================================================================================
+
+
+Variant Distribution:
+         baseline:   43 ( 28.7%)
+    collaborative:   46 ( 30.7%)
+              ltr:   35 ( 23.3%)
+          xgboost:   26 ( 17.3%)
+BASELINE
+  Queries:     61
+  Users:     33
+  Total Impressions:   1220
+  ────────────────────────────────────
+  CTR:                    0.57%
+  Avg Dwell Time:         0.17s
+  Likes/Query:           0.000
+  Shares/Query:          0.000
+  Bookmarks/Query:       0.000
+  Actions/Query:          0.23
+  Weighted Clicks:      0.1870
+COLLABORATIVE
+  Queries:     57
+  Users:     35
+  Total Impressions:   1140
+  ────────────────────────────────────
+  CTR:                    0.26%
+  Avg Dwell Time:         0.42s
+  Likes/Query:           0.000
+  Shares/Query:          0.018
+  Bookmarks/Query:       0.000
+  Actions/Query:          0.12
+  Weighted Clicks:      0.2400
+LTR
+  Queries:     48
+  Users:     28
+  Total Impressions:    960
+  ────────────────────────────────────
+  CTR:                    0.62%
+  Avg Dwell Time:         0.13s
+  Likes/Query:           0.000
+  Shares/Query:          0.000
+  Bookmarks/Query:       0.000
+  Actions/Query:          0.25
+  Weighted Clicks:      0.1726
+XGBOOST
+  Queries:     34
+  Users:     23
+  Total Impressions:    680
+  ────────────────────────────────────
+  CTR:                    0.15%
+  Avg Dwell Time:         0.01s
+  Likes/Query:           0.000
+  Shares/Query:          0.000
+  Bookmarks/Query:       0.000
+  Actions/Query:          0.06
+  Weighted Clicks:      0.0413
+
+==========================================================================================
+
+
+Variant Distribution:
+         baseline:   61 ( 30.5%)
+    collaborative:   57 ( 28.5%)
+              ltr:   48 ( 24.0%)
+          xgboost:   34 ( 17.0%)
+
+Final variant distribution:
+  baseline: 61 (30.5%)
+  collaborative: 57 (28.5%)
+  ltr: 48 (24.0%)
+  xgboost: 34 (17.0%)
+Collected 14000 total interaction logs
+Saved 14000 logs to logs_experiment.csv
+
+--- Phase 4: Results Analysis ---
+
+================================================================================
+COMPREHENSIVE A/B TEST RESULTS
+================================================================================
+
+================================================================================
+LTR vs BASELINE
+================================================================================
+
+CTR:
+  Baseline: 0.0057
+  Variant:  0.0063
+  Change:   +8.93%
+  p-value:  0.879780
+  Significant (95%):  No
+
+Avg Dwell Time:
+  Baseline: 0.1700
+  Variant:  0.1314
+  Change:   -22.72%
+  p-value:  0.809341
+  Significant (95%):  No
+
+Likes/Query:
+  Baseline: 0.0000
+  Variant:  0.0000
+  Change:   +0.44%
+  p-value:  nan
+  Significant (95%):  No
+
+Shares/Query:
+  Baseline: 0.0000
+  Variant:  0.0000
+  Change:   +0.44%
+  p-value:  nan
+  Significant (95%):  No
+
+Bookmarks/Query:
+  Baseline: 0.0000
+  Variant:  0.0000
+  Change:   +0.44%
+  p-value:  nan
+  Significant (95%):  No
+
+Weighted Clicks:
+  Baseline: 0.1870
+  Variant:  0.1726
+  Change:   -7.66%
+  p-value:  0.908659
+  Significant (95%):  No
+
+================================================================================
+XGBOOST vs BASELINE
+================================================================================
+
+CTR:
+  Baseline: 0.0057
+  Variant:  0.0015
+  Change:   -74.36%
+  p-value:  0.129087
+  Significant (95%):  No
+
+Avg Dwell Time:
+  Baseline: 0.1700
+  Variant:  0.0091
+  Change:   -94.63%
+  p-value:  0.230096
+  Significant (95%):  No
+
+Likes/Query:
+  Baseline: 0.0000
+  Variant:  0.0000
+  Change:   +1.28%
+  p-value:  nan
+  Significant (95%):  No
+
+Shares/Query:
+  Baseline: 0.0000
+  Variant:  0.0000
+  Change:   +1.28%
+  p-value:  nan
+  Significant (95%):  No
+
+Bookmarks/Query:
+  Baseline: 0.0000
+  Variant:  0.0000
+  Change:   +1.28%
+  p-value:  nan
+  Significant (95%):  No
+
+Weighted Clicks:
+  Baseline: 0.1870
+  Variant:  0.0413
+  Change:   -77.89%
+  p-value:  0.153364
+  Significant (95%):  No
+
+================================================================================
+COLLABORATIVE vs BASELINE
+================================================================================
+
+CTR:
+  Baseline: 0.0057
+  Variant:  0.0026
+  Change:   -54.13%
+  p-value:  0.269481
+  Significant (95%):  No
+
+Avg Dwell Time:
+  Baseline: 0.1700
+  Variant:  0.4205
+  Change:   +147.36%
+  p-value:  0.516278
+  Significant (95%):  No
+
+Likes/Query:
+  Baseline: 0.0000
+  Variant:  0.0000
+  Change:   +0.11%
+  p-value:  nan
+  Significant (95%):  No
+
+Shares/Query:
+  Baseline: 0.0000
+  Variant:  0.0175
+  Change:   +1726089.50%
+  p-value:  0.321612
+  Significant (95%):  No
+
+Bookmarks/Query:
+  Baseline: 0.0000
+  Variant:  0.0000
+  Change:   +0.11%
+  p-value:  nan
+  Significant (95%):  No
+
+Weighted Clicks:
+  Baseline: 0.1870
+  Variant:  0.2400
+  Change:   +28.38%
+  p-value:  0.782408
+  Significant (95%):  No
+
+======================================================================
+EXPERIMENT SUMMARY
+======================================================================
+BASELINE
+  Queries:     61
+  Users:     33
+  Total Impressions:   1220
+  ────────────────────────────────────
+  CTR:                    0.57%
+  Avg Dwell Time:         0.17s
+  Likes/Query:           0.000
+  Shares/Query:          0.000
+  Bookmarks/Query:       0.000
+  Actions/Query:          0.23
+  Weighted Clicks:      0.1870
+COLLABORATIVE
+  Queries:     57
+  Users:     35
+  Total Impressions:   1140
+  ────────────────────────────────────
+  CTR:                    0.26%
+  Avg Dwell Time:         0.42s
+  Likes/Query:           0.000
+  Shares/Query:          0.018
+  Bookmarks/Query:       0.000
+  Actions/Query:          0.12
+  Weighted Clicks:      0.2400
+LTR
+  Queries:     48
+  Users:     28
+  Total Impressions:    960
+  ────────────────────────────────────
+  CTR:                    0.62%
+  Avg Dwell Time:         0.13s
+  Likes/Query:           0.000
+  Shares/Query:          0.000
+  Bookmarks/Query:       0.000
+  Actions/Query:          0.25
+  Weighted Clicks:      0.1726
+XGBOOST
+  Queries:     34
+  Users:     23
+  Total Impressions:    680
+  ────────────────────────────────────
+  CTR:                    0.15%
+  Avg Dwell Time:         0.01s
+  Likes/Query:           0.000
+  Shares/Query:          0.000
+  Bookmarks/Query:       0.000
+  Actions/Query:          0.06
+  Weighted Clicks:      0.0413
+
+==========================================================================================
+
+Best performing variant: COLLABORATIVE
+Best mean weighted clicks: 0.2400
+
+ No significant improvements found
+Recommendation: Continue with baseline or collect more data
+Models saved to news_ranking_models.pkl
+
+Experiment Complete!
+Total logs collected: 14000
+Unique users: 197
+
+Models trained:
+  - LTR: ✓
+  - XGBoost: ✓
+  - Collaborative Filtering: ✓
